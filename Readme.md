@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Юрий Лемеш](https://up.htmlacademy.ru/adaptive/19/user/968211).
-* Наставник: `Неизвестно`.
+- Студент: [Юрий Лемеш](https://up.htmlacademy.ru/adaptive/19/user/968211).
+- Наставник: [Владислав Завадский](https://htmlacademy.ru/profile/id182831).
 
 ---
 

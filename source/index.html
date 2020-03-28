@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<html lang="en">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+
+    <nav class="main-nav">
+
+      <button class="main-nav__burger-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="main-nav__list">
+        <!-- ссылку на логотипе на главной убрать позже -->
+        <li class="main-nav__item main-nav__logo-item">
+          <a class="logo" aria-current="page" href="#">
+            <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link search" href="#">
+            <span class="search__caption">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link cart-link" href="#">
+            <span class="cart-link__caption">Корзина:</span>
+            <span class="cart-link__quantity">пока пуста</span>
+            <!-- убрать aria-hidden после добавления товара в корзину -->
+            <span class="visually-hidden" aria-hidden="true">товар</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+
+</body>
+
 </html>

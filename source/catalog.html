@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+
+    <nav class="main-nav">
+      <button class="main-nav__burger-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="main-nav__list">
+        <!-- ссылку на логотипе на главной убрать позже -->
+        <li class="main-nav__item main-nav__logo-item">
+          <a class="logo" aria-current="page" href="#">
+            <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link search" href="#">
+            <span class="search__caption">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link cart-link" href="#">
+            <span class="cart-link__caption">Корзина:</span>
+            <span class="cart-link__quantity">пока пуста</span>
+            <!-- убрать aria-hidden после добавления товара в корзину -->
+            <span class="visually-hidden" aria-hidden="true">товар</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="page-main">
+    <header class="page-main__header">
+      <h1 class="title title--1">Каталог товаров</h1>
+      <div class="image-container"></div>
+    </header>
+
+    <ul class="products">
+
+      <li class="products__item product-card">
+        <a class="product-card__link" href="#">
+          <h3 class="title title--3 product-card__title">Зайчик-попрыгайчик</h3>
+          <p class="image-container product-card__image-container">
+            <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
+          </p>
+        </a>
+        <p class="product-card__features">Рост 30 см, вес 200 г</p>
+        <p class="product-card__offer">
+          <b class="product-card__price">
+            <span class="visually-hidden">Цена:</span>
+            1200 руб.
+          </b>
+          <button class="button product-card__button" type="button">
+            <span class="visually-hidden">Добавить в корзину покупок</span>
+          </button>
+        </p>
+      </li>
+
+      <li class="products__item product-card">
+        <a class="product-card__link" href="#">
+          <h3 class="title title--3 product-card__title">Корзинка для белья</h3>
+          <p class="image-container product-card__image-container">
+            <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
+          </p>
+        </a>
+        <p class="product-card__features">Диаметр 30 см, высота 30 см</p>
+        <p class="product-card__offer">
+          <b class="product-card__price">
+            <span class="visually-hidden">Цена:</span>
+            1500 руб.
+          </b>
+          <button class="button product-card__button" type="button">
+            <span class="visually-hidden">Добавить в корзину покупок</span>
+          </button>
+        </p>
+      </li>
+
+      <li class="products__item product-card">
+        <a class="product-card__link" href="#">
+          <h3 class="title title--3 product-card__title">Большая корзинка для игрушек</h3>
+          <p class="image-container product-card__image-container">
+            <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
+          </p>
+        </a>
+        <p class="product-card__features">Диаметр 15 см, высота 10 см</p>
+        <p class="product-card__offer">
+          <b class="product-card__price">
+            <span class="visually-hidden">Цена:</span>
+            1200 руб.
+          </b>
+          <button class="button product-card__button" type="button">
+            <span class="visually-hidden">Добавить в корзину покупок</span>
+          </button>
+        </p>
+      </li>
+    </ul>
+
+  </main>
+
+  <footer class="page-footer">
+    <ul class="socials page-footer__socials">
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Наш Интраграм</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Наш Фэйсбук</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Наш твиттер</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright page-footer__copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

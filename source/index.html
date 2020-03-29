@@ -137,16 +137,12 @@
 
     <section class="contacts">
       <h2 class="title title--3">Контакты</h2>
-      <address class="contacts__list">
-        <p class="contacts__item">
-          <span class="contacts__key">email:</span>
-          <a class="contacts__value contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-        <p class="contacts__item">
-          <span class="contacts__key">адрес:</span>
-          <span class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-        </p>
-      </address>
+      <dl class="contacts__list">
+        <dt class="contacts__key">email:</dt>
+        <dd class="contacts__value"><a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+        <dt class="contacts__key">адрес:</dt>
+        <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+      </dl>
       <a class="contacts__map-link" href="#">
         <img class="contacts__map-image" src="https://via.placeholder.com/320x457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
       </a>
@@ -155,6 +151,32 @@
 
   </main>
 
+  <footer class="page-footer">
+    <ul class="socials page-footer__socials">
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Наш Интраграм</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Наш Фэйсбук</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="visually-hidden">Наш твиттер</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright page-footer__copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
 
 </body>
 

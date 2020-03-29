@@ -5,28 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <meta name="description" content="Магазин Мишка - лучшие поделки в подмосковье">
+  <meta name="keywords" content="поделки">
 </head>
 
 <body>
   <header class="page-header">
+    <!-- ссылку на логотипе на главной убрать позже -->
+    <a class="logo" aria-current="page" href="#" title="">
+      <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+    </a>
+
+    <button class="main-nav__burger-button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
 
     <nav class="main-nav">
-      <button class="main-nav__burger-button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
       <ul class="main-nav__list">
-        <!-- ссылку на логотипе на главной убрать позже -->
-        <li class="main-nav__item main-nav__logo-item">
-          <a class="logo" aria-current="page" href="#">
-            <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-          </a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html" title="">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Вязание на заказ</a>
+          <a class="main-nav__link" href="#" title="">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link search" href="#">
@@ -47,19 +47,19 @@
   </header>
 
   <main class="page-main">
-    <header class="page-main__header">
+    <div class="page-main__header">
       <h1 class="title title--1">Каталог товаров</h1>
-      <div class="image-container"></div>
-    </header>
+      <picture class="image-container"></picture>
+    </div>
 
     <ul class="products">
 
       <li class="products__item product-card">
-        <a class="product-card__link" href="#">
+        <a class="product-card__link" href="#" title="">
           <h3 class="title title--3 product-card__title">Зайчик-попрыгайчик</h3>
-          <p class="image-container product-card__image-container">
+          <picture class="image-container product-card__image-container">
             <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
-          </p>
+          </picture>
         </a>
         <p class="product-card__features">Рост 30 см, вес 200 г</p>
         <p class="product-card__offer">
@@ -74,11 +74,11 @@
       </li>
 
       <li class="products__item product-card">
-        <a class="product-card__link" href="#">
+        <a class="product-card__link" href="#" title="">
           <h3 class="title title--3 product-card__title">Корзинка для белья</h3>
-          <p class="image-container product-card__image-container">
+          <picture class="image-container product-card__image-container">
             <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
-          </p>
+          </picture>
         </a>
         <p class="product-card__features">Диаметр 30 см, высота 30 см</p>
         <p class="product-card__offer">
@@ -93,11 +93,11 @@
       </li>
 
       <li class="products__item product-card">
-        <a class="product-card__link" href="#">
+        <a class="product-card__link" href="#" title="">
           <h3 class="title title--3 product-card__title">Большая корзинка для игрушек</h3>
-          <p class="image-container product-card__image-container">
+          <picture class="image-container product-card__image-container">
             <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Зайчик-попрыгайчик">
-          </p>
+          </picture>
         </a>
         <p class="product-card__features">Диаметр 15 см, высота 10 см</p>
         <p class="product-card__offer">
@@ -117,17 +117,17 @@
   <footer class="page-footer">
     <ul class="socials page-footer__socials">
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="#" title="">
           <span class="visually-hidden">Наш Интраграм</span>
         </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="#" title="">
           <span class="visually-hidden">Наш Фэйсбук</span>
         </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="#" title="">
           <span class="visually-hidden">Наш твиттер</span>
         </a>
       </li>

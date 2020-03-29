@@ -5,28 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <meta name="description" content="Магазин Мишка - лучшие поделки в подмосковье">
+  <meta name="keywords" content="поделки">
 </head>
 
 <body>
   <header class="page-header">
+    <!-- ссылку на логотипе на главной убрать позже -->
+    <a class="logo" aria-current="page" href="#" title="">
+      <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+    </a>
+
+    <button class="main-nav__burger-button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
 
     <nav class="main-nav">
-      <button class="main-nav__burger-button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
       <ul class="main-nav__list">
-        <!-- ссылку на логотипе на главной убрать позже -->
-        <li class="main-nav__item main-nav__logo-item">
-          <a class="logo" aria-current="page" href="#">
-            <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-          </a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html" title="">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Вязание на заказ</a>
+          <a class="main-nav__link" href="#" title="">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link search" href="#">
@@ -47,21 +47,21 @@
   </header>
 
   <main class="page-main">
-    <header class="page-main__header">
+    <div class="page-main__header">
       <h1 class="title title--1">Милые штуки ручной работы для дома</h1>
-      <div class="image-container">
+      <picture class="image-container">
         <img class="image-container__image" src="https://via.placeholder.com/320x373" alt="Штучки ручной работы">
-      </div>
-    </header>
+      </picture>
+    </div>
 
     <section class="promo-catalog">
       <h2 class="visually-hidden">Популярные категории</h2>
       <ul class="promo-catalog__list">
         <li class="promo-catalog__item">
-          <a class="promo-catalog__link promo-catalog__link--interior" href="catalog.html">Предметы интеръера</a>
+          <a class="promo-catalog__link promo-catalog__link--interior" href="catalog.html" title="">Предметы интеръера</a>
         </li>
         <li class="promo-catalog__item">
-          <a class="promo-catalog__link promo-catalog__link--toys" href="catalog.html">Детские игрушки</a>
+          <a class="promo-catalog__link promo-catalog__link--toys" href="catalog.html" title="">Детские игрушки</a>
         </li>
       </ul>
     </section>
@@ -74,7 +74,7 @@
 
       <p class="promo-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
 
-      <table promo-product__features>
+      <table class="promo-product__features">
         <caption class="visually-hidden">Характеристики</caption>
         <tr>
           <td>Цвет:</td>
@@ -90,9 +90,9 @@
         </tr>
       </table>
 
-      <p class="image-container">
+      <picture class="image-container">
         <img class="image-container__image" src="https://via.placeholder.com/260x315" alt="Вязаная корзинка">
-      </p>
+      </picture>
 
       <p class="promo-product__price">Цена: 990 руб.</p>
 
@@ -143,7 +143,7 @@
         <dt class="contacts__key">адрес:</dt>
         <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
       </dl>
-      <a class="contacts__map-link" href="#">
+      <a class="contacts__map-link" href="#" title="">
         <img class="contacts__map-image" src="https://via.placeholder.com/320x457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
       </a>
       <button class="button button--prymary" type="button">Напишите нам</button>
@@ -154,17 +154,17 @@
   <footer class="page-footer">
     <ul class="socials page-footer__socials">
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="#" title="">
           <span class="visually-hidden">Наш Интраграм</span>
         </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="#" title="">
           <span class="visually-hidden">Наш Фэйсбук</span>
         </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="#" title="">
           <span class="visually-hidden">Наш твиттер</span>
         </a>
       </li>

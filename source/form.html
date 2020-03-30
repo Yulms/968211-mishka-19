@@ -47,7 +47,111 @@
   </header>
 
   <main class="page-main">
+    <header class="page-main__header">
+      <h1 class="title title--1">Вязание на заказ</h1>
+      <div class="image-container"></div>
+    </header>
 
+    <section class="form page-main__form">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <p class="form__entry-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__group">
+          <legend class="form__group-title">Тип</legend>
+          <ul class="form__list">
+            <li class="form__item radiocheck radiocheck--radio">
+              <input class="visually-hidden radiocheck__input" id="radio-1" type="radio" name="radio" value="1" checked>
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="radio-1">Аксессуар для интерьера</label>
+            </li>
+            <li class="form__item radiocheck radiocheck--radio">
+              <input class="visually-hidden radiocheck__input" id="radio-2" type="radio" value="2" name="radio">
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="radio-2">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group-title">Цвет</legend>
+          <ul class="form__list">
+            <li class="form__item radiocheck radiocheck--check">
+              <input class="visually-hidden radiocheck__input" id="check-1" type="checkbox" name="Белый" checked>
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="check-1">Белый</label>
+            </li>
+            <li class="form__item radiocheck radiocheck--check">
+              <input class="visually-hidden radiocheck__input" id="check-2" type="checkbox" name="Серый" checked>
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="check-2">Серый</label>
+            </li>
+            <li class="form__item radiocheck radiocheck--check">
+              <input class="visually-hidden radiocheck__input" id="check-3" type="checkbox" name="«Тиффани»">
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="check-3">«Тиффани»</label>
+            </li>
+            <li class="form__item radiocheck radiocheck--check">
+              <input class="visually-hidden radiocheck__input" id="check-4" type="checkbox" name="Черный">
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="check-4">Черный</label>
+            </li>
+            <li class="form__item radiocheck radiocheck--check">
+              <input class="visually-hidden radiocheck__input" id="check-5" type="checkbox" name="Розовый">
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="check-5">Розовый</label>
+            </li>
+            <li class="form__item radiocheck radiocheck--check">
+              <input class="visually-hidden radiocheck__input" id="check-6" type="checkbox" name="Оранжевый">
+              <span class="radiocheck__box"></span>
+              <label class="radiocheck__label" for="check-6">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group-title">ФИО</legend>
+          <ul class="form__list">
+            <li class="form__item text-input">
+              <label class="text-input__label" for="name-field">Имя:</label>
+              <input class="text-input__field" id="name-field" name="user-name" type="text" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="form__item text-input">
+              <label class="text-input__label" for="surname-field">Фамилия:</label>
+              <input class="text-input__field" id="surname-field" name="user-surname" type="text" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="form__item text-input">
+              <label class="text-input__label" for="patronymic-field">Отчество:</label>
+              <input class="text-input__field" id="patronymic-field" name="user-patronymic" type="text" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset>
+
+        <p class="form__group">
+          <span class="form__group-title" aria-hidden="true">Тел</span>
+          <label class="visually-hidden" for="phone-field">Ваш телефон</label>
+          <input type="tel" id="phone-field" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[+][7]{1}\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+          <svg width="32" height="32"></svg>
+        </p>
+
+        <p class="form__group">
+          <span class="form__group-title" aria-hidden="true">E-mail</span>
+          <label class="visually-hidden" for="email-field">Ваш email</label>
+          <input type="email" id="email-field" name="user-email" placeholder="Ваш Email*" required>
+          <svg width="32" height="32"></svg>
+        </p>
+
+        <p class="form__group">
+          <span class="form__group-title" aria-hidden="true">Доп</span>
+          <label class="visually-hidden" for="extra-field">Дополнительная информация</label>
+          <textarea name="user-extra" id="extra-field" cols="30" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </p>
+
+        <small class="form__footnote">* Поля обязательны для заполнения</small>
+
+        <button class="button button--primary">Отправить заказ</button>
+      </form>
+    </section>
 
   </main>
 

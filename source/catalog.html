@@ -122,7 +122,7 @@
         <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Видео процесса производства">
       </div>
       <p class="promo-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="button button--prymary promo-video__button-order" type="button">Сделать заказ</button>
+      <button class="button button--primary promo-video__button-order" type="button">Сделать заказ</button>
     </section>
   </main>
 
@@ -152,6 +152,30 @@
       </a>
     </div>
   </footer>
+
+  <div class="modal-overlay"></div>
+
+  <section class="modal">
+    <h2 class="modal__header">Добавить в корзину</h2>
+    <form class="option-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="option-form__fieldset">
+        <legend class="option-form__title">Выберите размер:</legend>
+        <label class="radio-button">
+          <input class="visually-hidden" type="radio" name="size-radio" value="1" checked>
+          <span class="option-form__size-caption">s</span>
+        </label>
+        <label class="radio-button">
+          <input class="visually-hidden" type="radio" name="size-radio" value="2">
+          <span class="option-form__size-caption">m</span>
+        </label>
+        <label class="radio-button">
+          <input class="visually-hidden" type="radio" name="size-radio" value="2">
+          <span class="option-form__size-caption">l</span>
+        </label>
+      </fieldset>
+      <button class="button button--call2action">Добавить</button>
+    </form>
+  </section>
 
 </body>
 

@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
+var cheerio = require('gulp-cheerio');
 var svgSprite = require('gulp-svg-sprite');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -14,9 +15,9 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    // .pipe(postcss([
+    //   autoprefixer()
+    // ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
@@ -24,6 +25,15 @@ gulp.task("css", function () {
 
 gulp.task("svgSprite", function () {
   return gulp.src(["source/img/*.svg", "!source/img/*logo*.svg"])
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
     .pipe(svgSprite({
       mode: {
         symbol: {

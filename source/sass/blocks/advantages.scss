@@ -1,0 +1,36 @@
+.advantages {
+  padding: 32px $side-paddings;
+}
+
+.advantages__title {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  display: block;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.advantages__icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60px;
+  height: 80px;
+  margin-top: 5px;
+}
+
+
+.advantages__icon {
+  display: block;
+  fill: $color-primary;
+}

@@ -180,11 +180,11 @@
     </section>
 
     <section class="reviews">
-      <h2 class="title title--2">Отзывы</h2>
+      <h2 class="title title--2 reviews__title">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
           <blockquote class="reviews__one-review">
-            <p>
+            <p class="reviews__review-text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
             <cite class="reviews__author">
@@ -194,12 +194,20 @@
           </blockquote>
         </li>
       </ul>
-      <button class="button reviews__button" type="button">
-        <span class="visually-hidden">Предыдущий отзыв</span>
-      </button>
-      <button class="button reviews__button" type="button">
-        <span class="visually-hidden">Следующий отзыв</span>
-      </button>
+      <div class="reviews__button-container">
+        <button class="button button--arrow button--arrow-left reviews__button--arrow" type="button">
+          <svg class="button__icon--arrow" width="50" height="26" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/symbol/sprite.svg#icon-left-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="button button--arrow button--arrow-right reviews__button--arrow" type="button">
+          <svg class="button__icon--arrow" width="50" height="26" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/symbol/sprite.svg#icon-right-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
+      </div>
       <button class="button button--primary reviews__button" type="button">Написать</button>
     </section>
 

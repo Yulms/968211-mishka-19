@@ -31,3 +31,23 @@
 .button--primary:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.button--arrow {
+  padding: 12px;
+  border: 1px solid $border-color;
+  outline: none;
+}
+
+.button__icon--arrow {
+  display: block;
+  margin: 0 auto;
+}
+
+.button--arrow:hover .button__icon--arrow,
+.button--arrow:focus .button__icon--arrow {
+  opacity: 0.6;
+}
+
+.button--arrow:active .button__icon--arrow {
+  opacity: 0.3;
+}

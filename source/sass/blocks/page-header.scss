@@ -1,6 +1,11 @@
 .page-header {
+  position: relative;
   min-height: 79px;
+  margin: 0 auto;
   border-bottom: 1px solid #ececec;
+
+  // temp
+  max-width: 600px;
 }
 
 .page-header__logo {

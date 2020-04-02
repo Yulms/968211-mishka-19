@@ -10,13 +10,13 @@
 }
 
 .promo-catalog__item:nth-child(odd) {
-  background-color: #63d1bb;
+  background-color: $color-primary;
 }
 
 .promo-catalog__link {
   display: flex;
   align-items: center;
-  padding: 24px;
+  padding: 24px $side-paddings;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;

@@ -9,3 +9,25 @@
   border: none;
   cursor: pointer;
 }
+
+.button--primary {
+  padding: 20px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $controls-color;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 2px $controls-color;
+  outline: none;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  color: #ffffff;
+  background-color: $controls-color;
+  box-shadow: 0;
+}
+
+.button--primary:active {
+  color: rgba(255, 255, 255, 0.3);
+}

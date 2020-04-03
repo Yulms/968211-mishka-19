@@ -1,20 +1,17 @@
 .page-main {
-  margin: 0 auto;
-  // temp
-  max-width: 600px;
+  padding-bottom: 58px;
 }
 
 .page-main__header {
   position: relative;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page-main .page-main__title {
+.page-main__title {
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  // max-width: 80%;
   margin: 0;
   padding: 0 $side-paddings;
   text-align: center;

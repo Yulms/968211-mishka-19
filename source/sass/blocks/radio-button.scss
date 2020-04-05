@@ -1,0 +1,23 @@
+.radio-button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-button__box {
+  display: block;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px $border-color;
+}
+
+.radio-button__input:hover+.radio-button__box,
+.radio-button__input:focus+.radio-button__box {
+  box-shadow: inset 0 0 0 2px #c7c7c7;
+}
+
+.radio-button__input:checked+.radio-button__box {
+  box-shadow: inset 0 0 0 2px $color-primary;
+}

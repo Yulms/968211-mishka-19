@@ -1,8 +1,10 @@
 @import "variables.scss";
 @import "common.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/closed.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/button.scss";
+@import "blocks/radio-button.scss";
 @import "blocks/title.scss";
 @import "blocks/table.scss";
 @import "blocks/image-container.scss";
@@ -18,3 +20,6 @@
 @import "blocks/copyright.scss";
 @import "blocks/products.scss";
 @import "blocks/product-card.scss";
+@import "blocks/modal-overlay.scss";
+@import "blocks/modal.scss";
+@import "blocks/option-form.scss";

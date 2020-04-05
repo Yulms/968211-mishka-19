@@ -20,8 +20,8 @@
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
         </picture>
       </a>
-
-      <button class="button page-header__toggle page-header__toggle--active" type="button">
+      <!-- page-header__toggle--active - класс для включения toggle -->
+      <button class="button page-header__toggle" type="button">
         <svg class="page-header__burger-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/symbol/sprite.svg#icon-menu-open"></use>
         </svg>
@@ -192,27 +192,29 @@
     </div>
   </footer>
 
+  <!-- для показа модального окна убираем класс closed -->
   <div class="modal-overlay"></div>
-
   <section class="modal">
     <h2 class="modal__header">Добавить в корзину</h2>
     <form class="option-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="option-form__fieldset">
         <legend class="option-form__title">Выберите размер:</legend>
-        <label class="radio-button">
-          <input class="visually-hidden" type="radio" name="size-radio" value="1" checked>
-          <span class="option-form__size-caption">s</span>
-        </label>
-        <label class="radio-button">
-          <input class="visually-hidden" type="radio" name="size-radio" value="2">
-          <span class="option-form__size-caption">m</span>
-        </label>
-        <label class="radio-button">
-          <input class="visually-hidden" type="radio" name="size-radio" value="2">
-          <span class="option-form__size-caption">l</span>
-        </label>
+        <div class="option-form__button-container">
+          <label class="radio-button option-form__radio-button">
+            <input class="radio-button__input visually-hidden" type="radio" name="size-radio" value="1" checked>
+            <span class="radio-button__box option-form__size-caption">s</span>
+          </label>
+          <label class="radio-button option-form__radio-button">
+            <input class="radio-button__input visually-hidden" type="radio" name="size-radio" value="2">
+            <span class="radio-button__box option-form__size-caption">m</span>
+          </label>
+          <label class="radio-button option-form__radio-button">
+            <input class="radio-button__input visually-hidden" type="radio" name="size-radio" value="2">
+            <span class="radio-button__box option-form__size-caption">l</span>
+          </label>
+        </div>
       </fieldset>
-      <button class="button button--call2action">Добавить</button>
+      <button class="button button--call2action option-form__button">Добавить</button>
     </form>
   </section>
 

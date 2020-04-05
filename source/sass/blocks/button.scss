@@ -32,6 +32,22 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button--call2action {
+  padding: 20px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  outline: none;
+}
+
+.button--call2action:hover,
+.button--call2action:focus {
+  background-color: $color-primary2;
+}
+
 .button--arrow {
   padding: 12px;
   border: 1px solid $border-color;

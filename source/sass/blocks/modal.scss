@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 100%;
+  padding: 36px 30px 46px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+}
+
+.modal__header {
+  margin: 0;
+  text-align: center;
+}
+
+.option-form__fieldset {
+  min-width: auto;
+  margin: 27px 0 31px;
+  padding: 0;
+  border: 0;
+}
+
+.option-form__title {
+  text-align: center;
+}
+
+.option-form__title+.option-form__button-container {
+  margin-top: 28px;
+}

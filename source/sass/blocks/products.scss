@@ -6,6 +6,6 @@
   list-style: none;
 }
 
-.products__item+.products__item {
+.products__item + .products__item {
   margin-top: 30px;
 }

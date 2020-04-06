@@ -15,7 +15,7 @@
   <header class="page-header page-header--closed">
     <div class="wrapper page-header__wrapper">
       <!-- ссылку на логотипе на главной убрать позже -->
-      <a class="logo page-header__logo" href="#" title="">
+      <a class="logo page-header__logo" href="index.html" title="">
         <picture class="logo__container">
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
         </picture>
@@ -37,7 +37,7 @@
             <a class="main-nav__link" href="catalog.html" title="">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#" title="">Вязание на заказ</a>
+            <a class="main-nav__link" href="form.html" title="">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">
@@ -147,7 +147,7 @@
         <img class="image-container__image" src="https://via.placeholder.com/260x195" alt="Видео процесса производства">
       </div>
       <p class="promo-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="button button--primary promo-video__button-order" type="button">Сделать заказ</button>
+      <a class="button button--primary promo-video__button-order" href="form.html">Сделать заказ</a>
     </section>
   </main>
 
@@ -193,8 +193,8 @@
   </footer>
 
   <!-- для показа модального окна убираем класс closed -->
-  <div class="modal-overlay"></div>
-  <section class="modal">
+  <div class="modal-overlay closed"></div>
+  <section class="modal closed">
     <h2 class="modal__header">Добавить в корзину</h2>
     <form class="option-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="option-form__fieldset">

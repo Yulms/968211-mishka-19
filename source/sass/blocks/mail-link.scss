@@ -1,0 +1,18 @@
+.mail-link {
+  font-size: 15px;
+  color: $text-color;
+  text-decoration: none;
+  box-shadow: 0 3px 0 0 #ffffff,
+    0 4px 0 0 $color-primary;
+}
+
+.mail-link:hover,
+.mail-link:focus {
+  color: $color-primary2;
+  box-shadow: 0 3px 0 0 #ffffff,
+    0 4px 0 0 $color-primary2;
+}
+
+.mail-link:active {
+  opacity: 0.3;
+}

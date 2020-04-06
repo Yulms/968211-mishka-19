@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: $color-primary2;
+}
+
+.socials__link:active .socials__icon {
+  opacity: 0.3;
+}

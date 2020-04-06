@@ -1,0 +1,39 @@
+.page-header {
+  min-height: 79px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__wrapper {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-header__logo {
+  margin: auto;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 79px;
+  height: 79px;
+  padding: 29px;
+}
+
+.page-header__toggle--active .page-header__burger-icon {
+  display: none;
+}
+
+.page-header__close-icon {
+  display: none;
+}
+
+.page-header__toggle--active .page-header__close-icon {
+  display: block;
+}
+
+.page-header--closed .page-header__main-nav {
+  display: none;
+}

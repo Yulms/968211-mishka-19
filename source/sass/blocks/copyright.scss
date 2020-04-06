@@ -1,0 +1,36 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid $border-color;
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text + .copyright__link {
+  margin-left: 30px;
+}
+
+.copyright__creator-icon {
+  fill: $color-primary;
+}
+
+.copyright__link:hover .copyright__creator-icon,
+.copyright__link:focus .copyright__creator-icon {
+  fill: $color-primary2;
+}
+
+.copyright__link:active .copyright__creator-icon {
+  opacity: 0.3;
+}

@@ -1,0 +1,44 @@
+.promo-product {
+  padding-top: 32px;
+  padding-bottom: 36px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+}
+
+.promo-product__title {
+  margin: 0;
+}
+
+.promo-product__subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $color-primary;
+}
+
+.promo-product__text {
+  margin-top: 24px;
+}
+
+.promo-product__features {
+  margin-top: 24px;
+}
+
+.promo-product__image-container {
+  margin-top: 28px;
+}
+
+
+.promo-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: $controls-color;
+}
+
+.promo-product__button {
+  width: 100%;
+}

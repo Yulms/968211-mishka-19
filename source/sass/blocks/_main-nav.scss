@@ -1,7 +1,18 @@
+.main-nav {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .main-nav__link {
@@ -13,6 +24,18 @@
   color: #000000;
   text-decoration: none;
   border-top: 1px solid #ececec;
+
+  @media (min-width: $tablet) {
+    min-width: 84px;
+    min-height: 89px;
+    padding: 32px 0;
+  }
+}
+
+.main-nav__search-caption {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__icon {

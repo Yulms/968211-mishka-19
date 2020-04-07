@@ -3,4 +3,10 @@
   margin: 0 auto;
   padding-left: $side-paddings;
   padding-right: $side-paddings;
+
+  @media (min-width: $tablet) {
+    max-width: $tablet-max-width;
+    padding-left: $side-paddings-tablet;
+    padding-right: $side-paddings-tablet;
+  }
 }

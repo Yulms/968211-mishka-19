@@ -1,3 +1,15 @@
+.text-input__icon-positioner {
+  position: relative;
+  z-index: 0;
+}
+
+.text-input__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6px;
+}
+
 .text-input__field {
   margin: 0;
   overflow: visible;
@@ -10,10 +22,21 @@
   outline: 0;
 }
 
+.text-input__icon {
+  opacity: 0.2;
+}
+
 .text-input__field:hover,
 .text-input__field:focus,
 .text-input__field:active {
   box-shadow: inset 0 -2px 0 0 $color-primary;
+}
+
+.text-input__field:hover + .text-input__icon,
+.text-input__field:focus + .text-input__icon,
+.text-input__field:active + .text-input__icon {
+  fill: $color-primary;
+  opacity: 1;
 }
 
 .text-input__field--area {
@@ -25,6 +48,10 @@
 .text-input__field--area:focus,
 .text-input__field--area:active {
   box-shadow: inset 0 0 0 2px $color-primary;
+}
+
+.text-input__field--iconised {
+  padding-right: 40px;
 }
 
 .text-input__field::placeholder {

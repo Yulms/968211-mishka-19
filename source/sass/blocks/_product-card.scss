@@ -7,10 +7,20 @@
   border: 1px solid $border-color;
 }
 
+.product-card:hover,
+.product-card:focus-within {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-card:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product-card__link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  outline: none;
 }
 
 .product-card__image-container {

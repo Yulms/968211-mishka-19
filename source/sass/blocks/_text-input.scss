@@ -8,6 +8,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 6px;
+  opacity: 0.2;
 }
 
 .text-input__field {
@@ -21,10 +22,6 @@
   border: 0;
   box-shadow: inset 0 -2px 0 0 $label-color;
   outline: 0;
-}
-
-.text-input__icon {
-  opacity: 0.2;
 }
 
 .text-input__field:hover,
@@ -56,7 +53,7 @@
 }
 
 .text-input__field::placeholder {
-  color: rgba($text-color, 0.3)
+  color: rgba($text-color, 0.3);
 }
 
 .text-input__label {

@@ -6,3 +6,12 @@
 .logo__image {
   display: block;
 }
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}

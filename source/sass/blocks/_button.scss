@@ -1,4 +1,6 @@
 .button {
+  display: inline-block;
+  vertical-align: middle;
   appearance: button;
   font: inherit;
   text-align: center;
@@ -21,14 +23,14 @@
   outline: none;
 }
 
-.button--primary:hover,
-.button--primary:focus {
+.button--primary:hover:not(:disabled),
+.button--primary:focus:not(:disabled) {
   color: #ffffff;
   background-color: $controls-color;
   box-shadow: 0;
 }
 
-.button--primary:active {
+.button--primary:active:not(:disabled) {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -43,8 +45,8 @@
   outline: none;
 }
 
-.button--call2action:hover,
-.button--call2action:focus {
+.button--call2action:hover:not(:disabled),
+.button--call2action:focus:not(:disabled) {
   background-color: $color-primary2;
 }
 
@@ -59,11 +61,16 @@
   margin: 0 auto;
 }
 
-.button--arrow:hover .button__icon--arrow,
-.button--arrow:focus .button__icon--arrow {
+.button--arrow:hover:not(:disabled) .button__icon--arrow,
+.button--arrow:focus:not(:disabled) .button__icon--arrow {
   opacity: 0.6;
 }
 
 .button--arrow:active .button__icon--arrow {
   opacity: 0.3;
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
 }

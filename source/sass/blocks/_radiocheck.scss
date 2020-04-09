@@ -1,0 +1,76 @@
+.radiocheck {
+  display: flex;
+  padding-top: 10px;
+}
+
+.radiocheck__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.radiocheck__box {
+  position: relative;
+  margin-top: -10px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 22px;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px $controls-color;
+}
+
+.radiocheck--radio .radiocheck__box {
+  border-radius: 50%;
+}
+
+.radiocheck__input:hover:not(:disabled) + .radiocheck__box,
+.radiocheck__input:focus:not(:disabled) + .radiocheck__box {
+  box-shadow: inset 0 0 0 2px $color-primary;
+}
+
+.radiocheck__input:active:not(:disabled) + .radiocheck__box {
+  box-shadow: inset 0 0 0 2px rgba($controls-color, 0.3);
+}
+
+.radiocheck__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $label-color;
+  white-space: normal;
+}
+
+.radiocheck--radio .radiocheck__input:checked + .radiocheck__box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-primary;
+}
+
+.radiocheck--check .radiocheck__input:checked + .radiocheck__box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-3px) rotate(-45deg);
+  width: 22px;
+  height: 11px;
+  border-left: 2px solid $controls-color;
+  border-bottom: 2px solid $controls-color;
+}
+
+.radiocheck__input:disabled + .radiocheck__box,
+.radiocheck__input:disabled ~ .radiocheck__label {
+  opacity: 0.4;
+}

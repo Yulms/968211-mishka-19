@@ -29,3 +29,9 @@
     padding: 160px $side-paddings-tablet 0;
   }
 }
+
+.page-main__promo-catalog {
+  @media (min-width: $tablet) {
+    margin-top: -122px;
+  }
+}

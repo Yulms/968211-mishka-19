@@ -2,11 +2,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    margin-top: -122px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $tablet-max-width;
+    margin: 0 auto;
+    padding-left: $side-paddings-tablet;
+    padding-right: $side-paddings-tablet;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop-max-width;
+  }
 }
 
 .promo-catalog__item {
   display: block;
   background-color: #56c3b2;
+  flex-basis: 50%;
+  flex-grow: 1;
 }
 
 .promo-catalog__item:nth-child(odd) {
@@ -16,14 +32,24 @@
 .promo-catalog__link {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  max-width: $mobile-max-width;
+  margin: 0 auto;
+  padding-left: $side-paddings;
+  padding-right: $side-paddings;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   transition: padding 0.15s;
+
+  @media (min-width: $tablet) {
+    max-width: none;
+    padding-left: $side-paddings-tablet;
+    padding-right: $side-paddings-tablet;
+  }
 }
 
 .promo-catalog__link:hover,

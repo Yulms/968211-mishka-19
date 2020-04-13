@@ -35,7 +35,9 @@
 }
 
 .nav--main .nav__list {
-  margin-left: -35px;
+  @media (min-width: $tablet) {
+    margin-left: -35px;
+  }
 }
 
 .nav--user .nav__list {

@@ -1,22 +1,36 @@
 .page-header {
-  min-height: 79px;
   border-bottom: 1px solid #ececec;
 }
 
 .page-header__wrapper {
-  position: relative;
-
   @media (max-width: $mobile-only) {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-.page-header__logo {
-  margin: auto;
+.page-header__grid-container {
+  position: relative;
 
   @media (min-width: $tablet) {
-    position: absolute;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 88px;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+
+  @media (min-width: $tablet) {
+    order: -9;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -31,7 +45,41 @@
   }
 
   @media (min-width: $tablet) {
+    order: 100;
     display: none;
+  }
+}
+
+.page-header__nav-main {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 100%;
+    max-width: 64%;
+  }
+
+  @media (min-width: $desktop) {
+    order: -10;
+    position: static;
+    display: flex;
+    max-width: none;
+    flex-basis: 40%;
+    margin-top: 0;
+  }
+}
+
+.page-header__nav-user {
+  @media (min-width: $tablet) {
+    order: -9;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+    flex-basis: 40%;
+    margin-left: 0;
   }
 }
 
@@ -48,19 +96,60 @@
 }
 
 @media (max-width: $mobile-only) {
-  .page-header--closed .page-header__main-nav {
+  .page-header--closed .page-header__mobile-nav {
     display: none;
   }
 }
 
-
-
 .page-header__offer-text {
   display: none;
-  margin: 0;
-  font-size: 15px;
 
   @media (min-width: $tablet) {
+    position: absolute;
+    top: 100%;
+    right: $side-paddings-tablet;
     display: block;
+    max-width: 40%;
+    margin: 0;
+    padding-top: 25px;
+    font-size: 15px;
+    text-align: right;
+  }
+}
+
+.page-header__promo-list {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.page-header__promo-item:not(:last-child) {
+  @media (min-width: $desktop) {
+    margin-right: 60px;
+  }
+}
+
+.page-header__promo-item {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.page-header__promo-link {
+  @media (min-width: $desktop) {
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
   }
 }

@@ -9,4 +9,8 @@
     padding-left: $side-paddings-tablet;
     padding-right: $side-paddings-tablet;
   }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop-max-width;
+  }
 }

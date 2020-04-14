@@ -1,0 +1,21 @@
+.tabled-dl {
+  margin: 0;
+}
+
+.tabled-dl__row {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.tabled-dl--border-bottom .tabled-dl__row {
+  border-bottom: 1px solid $border-color;
+}
+
+.tabled-dl__term {
+  width: 30%;
+}
+
+.tabled-dl__description {
+  margin-left: 20px;
+}

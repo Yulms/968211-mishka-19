@@ -7,6 +7,15 @@
   background-position: 0 100%;
 }
 
+.promo-product__header {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 .promo-product__title {
   margin: 0;
 }
@@ -16,6 +25,19 @@
   font-weight: 700;
   line-height: 20px;
   color: $color-primary;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    flex-basis: 0;
+    text-align: center;
+  }
+}
+
+.promo-product__inner {
+  @media (min-width: $tablet) {
+    position: relative;
+    padding-right: 340px;
+  }
 }
 
 .promo-product__text {
@@ -28,6 +50,13 @@
 
 .promo-product__image-container {
   margin-top: 28px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }
 
 

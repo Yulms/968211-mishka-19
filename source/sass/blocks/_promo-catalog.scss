@@ -20,8 +20,11 @@
 .promo-catalog__item {
   display: block;
   background-color: #56c3b2;
-  flex-basis: 50%;
-  flex-grow: 1;
+
+  @media (min-width: $tablet) {
+    flex-basis: $tablet-column-width * 2;
+    flex-grow: 1;
+  }
 }
 
 .promo-catalog__item:nth-child(odd) {

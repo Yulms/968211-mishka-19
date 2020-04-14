@@ -34,7 +34,7 @@
   @media (min-width: $desktop) {
     position: relative;
     padding-top: 55px;
-    padding-left: 174px;
+    padding-left: $desktop-column-width;
   }
 }
 
@@ -90,14 +90,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 50%;
+    flex-basis: $tablet-column-width * 2;
     flex-grow: 1;
     padding-right: 44px;
   }
 
   @media (min-width: $desktop) {
     flex-grow: 0;
-    padding-left: 174px;
+    padding-left: $desktop-column-width;
   }
 }
 
@@ -117,7 +117,7 @@
   }
 
   @media (min-width: $tablet) {
-    flex-basis: 50%;
+    flex-basis: $tablet-column-width * 2;
     flex-grow: 1;
   }
 

@@ -1,18 +1,43 @@
 .promo-product {
+  display: flex;
+  flex-direction: column;
   padding-top: 32px;
   padding-bottom: 36px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: auto 6px;
   background-repeat: repeat-x;
   background-position: 0 100%;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    z-index: 0;
+  }
+
 }
 
+.promo-product__header {
+  order: -10;
+  margin-bottom: 24px;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 55px;
+  }
 
-
-
-
-
+  @media (min-width: $desktop) {
+    position: relative;
+    padding-top: 55px;
+    padding-left: 174px;
+  }
+}
 
 .promo-product__header {
   margin-bottom: 30px;
@@ -40,44 +65,67 @@
     flex-basis: 0;
     text-align: center;
   }
+
+  @media (min-width: $desktop) {
+    width: 174px;
+    position: absolute;
+    left: 0;
+
+  }
 }
 
-
-
-
-
-
-
-
+.promo-product__subtitle-wrap {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}
 
 .promo-product__inner {
 
+  @media (max-width: $mobile-only) {
+    display: contents;
+  }
+
   @media (min-width: $tablet) {
-    position: relative;
-    padding-right: 340px;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding-right: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 0;
+    padding-left: 174px;
   }
 }
 
 .promo-product__text {
+  order: -9;
   margin: 0;
 }
 
 .promo-product__features {
+  order: -8;
   margin-top: 24px;
 }
 
 .promo-product__image-container {
-  display: block;
-  margin-top: 24px;
-
-  @media (min-width: $tablet) {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // margin-top: 0;
-
+  @media (max-width: $mobile-only) {
+    margin-top: 24px;
   }
 
+  @media (min-width: $tablet) {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop) {
+    z-index: -1;
+    margin-top: -135px;
+  }
 }
 
 .promo-product__price {

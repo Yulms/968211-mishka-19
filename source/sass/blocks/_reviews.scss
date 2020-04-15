@@ -1,14 +1,41 @@
 .reviews {
+  max-width: $mobile-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $side-paddings;
+  padding-right: $side-paddings;
   padding-top: 32px;
-  padding-bottom: 36px;
+  padding-bottom: 46px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: auto 6px;
   background-repeat: repeat-x;
   background-position: 0 100%;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    z-index: 0;
+    max-width: $tablet-max-width;
+    padding-left: $side-paddings-tablet;
+    padding-right: $side-paddings-tablet;
+    padding-top: 80px;
+    padding-bottom: 52px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop-max-width;
+    padding-bottom: 102px;
+  }
 }
 
 .reviews__title {
   margin: 0;
+
+  @media (min-width: $tablet) {
+    max-width: calc(100% - 200px);
+  }
 }
 
 .reviews__list {
@@ -38,6 +65,18 @@
 .reviews__button-container {
   display: flex;
   margin: 36px 0 0;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 52px;
+    right: $side-paddings-tablet;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 102px;
+    right: $side-paddings-desktop;
+  }
 }
 
 .reviews__button--arrow {
@@ -49,6 +88,20 @@
 }
 
 .reviews__button {
-  width: 100%;
-  margin-top: 38px;
+  @media (max-width: $mobile-only) {
+    width: 100%;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: $side-paddings-tablet;
+    width: 175px;
+  }
+
+  @media (min-width: $tablet) {
+    right: $side-paddings-desktop;
+  }
 }

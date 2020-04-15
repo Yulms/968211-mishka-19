@@ -27,7 +27,7 @@
 .button--primary:focus:not(:disabled) {
   color: #ffffff;
   background-color: $controls-color;
-  box-shadow: 0;
+  box-shadow: none;
 }
 
 .button--primary:active:not(:disabled) {

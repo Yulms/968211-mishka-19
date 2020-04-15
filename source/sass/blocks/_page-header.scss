@@ -85,6 +85,7 @@
 .page-header__nav-main {
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     position: relative;
+
     @include row-background;
   }
 

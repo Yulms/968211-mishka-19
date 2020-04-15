@@ -93,74 +93,95 @@
       <h1 class="title title--1 page-main__title wrapper">Каталог товаров</h1>
     </div>
 
-    <ul class="products wrapper">
+    <div class="products page-main__products wrapper">
+      <ul class="products__list">
 
-      <li class="products__item product-card">
-        <a class="product-card__link" href="#" title="">
-          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-          <picture class="image-container product-card__image-container">
-            <img class="image-container__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
-          </picture>
-        </a>
-        <p class="product-card__features">Рост 30 см, вес 200 г</p>
-        <p class="product-card__offer">
-          <b class="product-card__price">
-            <span class="visually-hidden">Цена:</span>
-            1200 руб.
-          </b>
-          <button class="button product-card__button" type="button">
-            <svg class="product-card__cart-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="visually-hidden">Добавить в корзину покупок</span>
-          </button>
-        </p>
-      </li>
+        <li class="products__item product-card">
 
-      <li class="products__item product-card">
-        <a class="product-card__link" href="#" title="">
-          <h3 class="product-card__title">Корзинка для белья</h3>
-          <picture class="image-container product-card__image-container">
-            <img class="image-container__image" src="img/photo-bowl-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
-          </picture>
-        </a>
-        <p class="product-card__features">Диаметр 30 см, высота 30 см</p>
-        <p class="product-card__offer">
-          <b class="product-card__price">
-            <span class="visually-hidden">Цена:</span>
-            1500 руб.
-          </b>
-          <button class="button product-card__button" type="button">
-            <svg class="product-card__cart-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="visually-hidden">Добавить в корзину покупок</span>
-          </button>
-        </p>
-      </li>
+          <a class="product-card__image-link" href="#" title="">
+            <picture class="image-container product-card__image-container">
+              <img class="image-container__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
 
-      <li class="products__item product-card">
-        <a class="product-card__link" href="#" title="">
-          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-          <picture class="image-container product-card__image-container">
-            <img class="image-container__image" src="img/photo-toys-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
-          </picture>
-        </a>
-        <p class="product-card__features">Диаметр 15 см, высота 10 см</p>
-        <p class="product-card__offer">
-          <b class="product-card__price">
-            <span class="visually-hidden">Цена:</span>
-            1200 руб.
-          </b>
-          <button class="button product-card__button" type="button">
-            <svg class="product-card__cart-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="visually-hidden">Добавить в корзину покупок</span>
-          </button>
-        </p>
-      </li>
-    </ul>
+          <div class="product-card__info">
+            <a class="product-card__link" href="#" title="">
+              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+            </a>
+
+            <p class="product-card__features">Рост 30 см, вес 200 г</p>
+            <p class="product-card__offer">
+              <b class="product-card__price">
+                <span class="visually-hidden">Цена:</span>
+                1200 руб.
+              </b>
+              <button class="button product-card__button" type="button">
+                <svg class="product-card__cart-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину покупок</span>
+              </button>
+            </p>
+          </div>
+        </li>
+
+        <li class="products__item product-card">
+
+          <a class="product-card__image-link" href="#" title="">
+            <picture class="image-container product-card__image-container">
+              <img class="image-container__image" src="img/photo-bowl-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
+
+          <div class="product-card__info">
+            <a class="product-card__link" href="#" title="">
+              <h3 class="product-card__title">Корзинка для белья</h3>
+            </a>
+            <p class="product-card__features">Диаметр 30 см, высота 30 см</p>
+            <p class="product-card__offer">
+              <b class="product-card__price">
+                <span class="visually-hidden">Цена:</span>
+                1500 руб.
+              </b>
+              <button class="button product-card__button" type="button">
+                <svg class="product-card__cart-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину покупок</span>
+              </button>
+            </p>
+          </div>
+        </li>
+
+        <li class="products__item product-card">
+          <a class="product-card__image-link" href="#" title="">
+            <picture class="image-container product-card__image-container">
+              <img class="image-container__image" src="img/photo-toys-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
+
+          <div class="product-card__info">
+            <a class="product-card__link" href="#" title="">
+              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+            </a>
+
+            <p class="product-card__features">Диаметр 15 см, высота 10 см</p>
+            <p class="product-card__offer">
+              <b class="product-card__price">
+                <span class="visually-hidden">Цена:</span>
+                1200 руб.
+              </b>
+              <button class="button product-card__button" type="button">
+                <svg class="product-card__cart-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину покупок</span>
+              </button>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <div class="wrapper">
       <section class="promo-video page-main__promo-video">

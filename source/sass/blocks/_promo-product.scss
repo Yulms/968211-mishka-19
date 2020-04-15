@@ -21,7 +21,7 @@
 
 .promo-product__header {
   order: -10;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -35,17 +35,6 @@
     position: relative;
     padding-top: 55px;
     padding-left: $desktop-column-width;
-  }
-}
-
-.promo-product__header {
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
   }
 }
 
@@ -69,7 +58,6 @@
     width: 174px;
     position: absolute;
     left: 0;
-
   }
 }
 
@@ -80,7 +68,6 @@
 }
 
 .promo-product__inner {
-
   @media (max-width: $mobile-only) {
     display: contents;
   }

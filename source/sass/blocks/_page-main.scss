@@ -18,10 +18,13 @@
     min-height: 746px;
     background-image: url("../img/hero-tablet@1x.jpg");
   }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
 }
 
 .page-main__title {
-
   padding-top: 74px;
   padding-bottom: 74px;
   text-align: center;
@@ -40,5 +43,11 @@
 .page-main__promo-catalog {
   @media (min-width: $tablet) {
     margin-top: -122px;
+  }
+}
+
+.page-main__products {
+  @media (min-width: $tablet) {
+    margin-top: 30px;
   }
 }

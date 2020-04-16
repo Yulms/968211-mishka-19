@@ -1,6 +1,7 @@
 .form-order {
   padding-top: 32px;
   padding-bottom: 36px;
+  overflow-x: hidden;
 }
 
 .form-order__entry-text {
@@ -11,39 +12,117 @@
   margin: 0;
   padding: 17px 0;
   border: 0;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    z-index: 0;
+    padding: 50px 0;
+
+    // бэкграунд для нечетных элементов
+    &:nth-child(even)::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      height: 100%;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: #f1f1f1;
+    }
+  }
 }
 
-.form-order__group-title {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.form-order__title {
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: $color-primary;
+
+  @media (max-width: $mobile-only) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      flex-grow: 1;
+      margin-left: 26px;
+      background-color: $color-primary;
+    }
+  }
 }
 
-.form-order__group-title::after {
-  content: "";
-  width: 50px;
-  height: 1px;
-  flex-grow: 1;
-  margin-left: 26px;
-  background-color: $color-primary;
+.form-order__title-positioner {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    max-width: $tablet-column-width;
+    padding-right: 20px;
+  }
+}
+
+.form-order__title-unflow {
+  @media (min-width: $tablet) {
+    position: absolute;
+  }
+}
+
+.form-order__field-column {
+  @media (min-width: $tablet) {
+    width: 100%;
+    padding-left: $tablet-column-width;
+  }
 }
 
 .form-order__list {
-  margin: 0;
+  margin: -22px 0 0;
   padding: 0;
   list-style: none;
 }
 
-.form-order__item + .form-order__item {
+.form-order__list--responsive {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-order__item {
   margin-top: 22px;
 }
 
+.form-order__list--responsive .form-order__item {
+  @media (min-width: $tablet) {
+    flex-basis: 33%;
+    flex-grow: 1;
+  }
+}
+
+.form-order__text-input {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .form-order__text-area {
-  margin-top: 23px;
+  @media (max-width: $mobile-only) {
+    margin-top: 23px;
+  }
+}
+
+.form-order__footer {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .form-order__footnote {
@@ -52,6 +131,12 @@
 }
 
 .form-order__button {
-  width: 100%;
-  margin-top: 31px;
+  @media (max-width: $mobile-only) {
+    width: 100%;
+    margin-top: 31px;
+  }
+
+  @media (min-width: $tablet) {
+    order: -1;
+  }
 }

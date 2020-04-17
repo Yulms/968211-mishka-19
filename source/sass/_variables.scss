@@ -1,5 +1,24 @@
+$mobile-only: 771px;
+$tablet: 772px;
+$tablet-only: 1149px;
+$desktop: 1150px;
+
 $side-paddings: 30px;
-$mobile-max-width: 500px;
+$side-paddings-tablet: 50px;
+$side-paddings-desktop: $side-paddings-tablet;
+
+$mobile-column-count: 2;
+$tablet-column-count: 4;
+$desktop-column-count: 6;
+
+$mobile-column-width: 100% / $mobile-column-count;
+$tablet-column-width: 100% / $tablet-column-count;
+$desktop-column-width: 100% / $desktop-column-count;
+
+$mobile-max-width: 320px;
+$tablet-max-width: 772px;
+$desktop-max-width: 1150px;
+
 $text-color: #444444;
 $title-color: #010000;
 $color-primary: #63d1bb;

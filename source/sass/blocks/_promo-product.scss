@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 174px;
+    width: $desktop-column-width;
     position: absolute;
     left: 0;
   }

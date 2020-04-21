@@ -25,19 +25,9 @@
 }
 
 .main__title {
-  padding-top: 74px;
-  padding-bottom: 74px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
-
-  @media (min-width: $tablet) {
-    padding-top: 100px;
-  }
-}
-
-.main__header--index-page .main__title {
-  @media (min-width: $tablet) {
-    padding-top: 160px;
-  }
 }
 
 .main__promo-catalog {

@@ -1,11 +1,14 @@
 .wrapper {
-  max-width: $mobile-max-width;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $side-paddings;
-  padding-right: $side-paddings;
 
-  @media (min-width: $tablet) {
+  @media (max-width: $mobile-only) {
+    max-width: $mobile-max-width;
+    padding-left: $side-paddings;
+    padding-right: $side-paddings;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     max-width: $tablet-max-width;
     padding-left: $side-paddings-tablet;
     padding-right: $side-paddings-tablet;
@@ -13,5 +16,7 @@
 
   @media (min-width: $desktop) {
     max-width: $desktop-max-width;
+    padding-left: $side-paddings-desktop;
+    padding-right: $side-paddings-desktop;
   }
 }

@@ -81,10 +81,18 @@
 }
 
 .form-order__list {
-  margin: -22px 0 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $mobile-only) {
+    margin: -10px 0 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin: -24px 0 0 -24px;
+  }
 }
+
 
 .form-order__list--responsive {
   @media (min-width: $tablet) {
@@ -94,7 +102,15 @@
 }
 
 .form-order__item {
-  margin-top: 22px;
+  @media (max-width: $mobile-only) {
+    min-height: 52px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 24px;
+    margin-left: 24px;
+  }
 }
 
 .form-order__list--responsive .form-order__item {

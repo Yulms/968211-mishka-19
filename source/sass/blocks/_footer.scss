@@ -1,4 +1,4 @@
-.page-footer {
+.footer {
   background-color: #f1f1f1;
 
   @media (min-width: $tablet) {
@@ -8,7 +8,7 @@
   }
 }
 
-.page-footer__wrapper {
+.footer__wrapper {
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -17,13 +17,13 @@
   }
 }
 
-.page-footer__logo {
+.footer__logo {
   @media (max-width: $mobile-only) {
     display: none;
   }
 }
 
-.page-footer__copyright {
+.footer__copyright {
   @media (max-width: $mobile-only) {
     border-top: 1px solid $border-color;
   }

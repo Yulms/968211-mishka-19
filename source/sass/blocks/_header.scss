@@ -10,14 +10,14 @@
     background-color: #f1f1f1;
     border-top: 1px solid #dfdfdf;
 
-    .page-header--index-page & {
+    .header--index-page & {
       background-color: #f9f9f9;
       border-top: 1px solid #e7e7e7;
     }
   }
 }
 
-.page-header {
+.header {
   @media (min-width: $tablet) {
     margin-bottom: -73px;
     overflow: hidden;
@@ -25,23 +25,23 @@
 }
 
 @media (max-width: $mobile-only) {
-  .page-header {
+  .header {
     border-bottom: 1px solid #dfdfdf;
   }
 
-  .page-header--index-page {
+  .header--index-page {
     border-bottom: 1px solid #e7e7e7;
   }
 }
 
-.page-header__wrapper {
+.header__wrapper {
   @media (max-width: $mobile-only) {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-.page-header__grid-container {
+.header__grid-container {
   position: relative;
 
   @media (min-width: $tablet) {
@@ -53,7 +53,7 @@
   }
 }
 
-.page-header__logo {
+.header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +66,7 @@
   }
 }
 
-.page-header__toggle {
+.header__toggle {
   @media (max-width: $mobile-only) {
     position: absolute;
     top: 0;
@@ -82,7 +82,7 @@
   }
 }
 
-.page-header__nav-main {
+.header__nav-main {
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     position: relative;
 
@@ -103,7 +103,7 @@
   }
 }
 
-.page-header__nav-user {
+.header__nav-user {
   @media (min-width: $tablet) {
     order: -9;
     display: flex;
@@ -119,25 +119,25 @@
   }
 }
 
-.page-header__toggle--active .page-header__burger-icon {
+.header__toggle--active .header__burger-icon {
   display: none;
 }
 
-.page-header__toggle--active .page-header__close-icon {
+.header__toggle--active .header__close-icon {
   display: block;
 }
 
-.page-header__close-icon {
+.header__close-icon {
   display: none;
 }
 
 @media (max-width: $mobile-only) {
-  .page-header--closed .page-header__mobile-nav {
+  .header--closed .header__mobile-nav {
     display: none;
   }
 }
 
-.page-header__offer-text {
+.header__offer-text {
   display: none;
 
   @media (min-width: $tablet) {
@@ -153,7 +153,7 @@
   }
 }
 
-.page-header__promo-list {
+.header__promo-list {
   display: none;
 
   @media (min-width: $desktop) {
@@ -169,19 +169,19 @@
   }
 }
 
-.page-header__promo-item:not(:last-child) {
+.header__promo-item:not(:last-child) {
   @media (min-width: $desktop) {
     margin-right: 60px;
   }
 }
 
-.page-header__promo-item {
+.header__promo-item {
   @media (min-width: $desktop) {
     display: flex;
   }
 }
 
-.page-header__promo-link {
+.header__promo-link {
   @media (min-width: $desktop) {
     padding: 25px 0;
     font-size: 15px;

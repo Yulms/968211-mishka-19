@@ -1,43 +1,54 @@
 .promo-catalog__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @include media-breakpoint-only(tablet) {
     max-width: $tablet-max-width;
-    margin: 0 auto;
     padding-left: $side-paddings-tablet;
     padding-right: $side-paddings-tablet;
   }
 
-  @media (min-width: $desktop) {
+  @include media-breakpoint-only(desktop) {
     max-width: $desktop-max-width;
+    padding-left: $side-paddings-desktop;
+    padding-right: $side-paddings-desktop;
   }
 }
 
 .promo-catalog__item {
   display: block;
-  background-color: #56c3b2;
+  transition: 0.15s;
 
   @media (min-width: $tablet) {
-    flex-basis: $tablet-column-width * 2;
+    flex-basis: 300px;
     flex-grow: 1;
   }
+}
+
+.promo-catalog__item:nth-child(even) {
+  background-color: #56c3b2;
 }
 
 .promo-catalog__item:nth-child(odd) {
   background-color: $color-primary;
 }
 
+.promo-catalog__item:hover,
+.promo-catalog__item:focus-within {
+  padding-bottom: 5px;
+  margin-top: -5px;
+}
+
 .promo-catalog__link {
   display: flex;
   align-items: center;
-  max-width: $mobile-max-width;
   margin: 0 auto;
-  padding-left: $side-paddings;
-  padding-right: $side-paddings;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 19px;
@@ -45,28 +56,23 @@
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-  transition: padding 0.15s;
+  outline: none;
 
-  @media (min-width: $tablet) {
-    max-width: none;
+  @include media-breakpoint-only(mobile) {
+    max-width: $mobile-max-width;
+    padding-left: $side-paddings-mobile;
+    padding-right: $side-paddings-mobile;
+  }
+
+  @include media-breakpoint-only(tablet) {
     padding-left: $side-paddings-tablet;
     padding-right: $side-paddings-tablet;
   }
-}
 
-.promo-catalog__link:hover,
-.promo-catalog__link:focus {
-  padding-top: 26px;
-  padding-bottom: 27px;
-}
-
-.promo-catalog__inner {
-  transition: transform 0.15s;
-}
-
-.promo-catalog__link:hover .promo-catalog__inner,
-.promo-catalog__link:focus .promo-catalog__inner {
-  transform: translateY(-5px);
+  @include media-breakpoint-up(desktop) {
+    padding-left: $side-paddings-desktop;
+    padding-right: $side-paddings-desktop;
+  }
 }
 
 .promo-catalog__link:active .promo-catalog__inner {

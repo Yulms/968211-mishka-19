@@ -4,8 +4,8 @@
 
   @media (max-width: $mobile-only) {
     max-width: $mobile-max-width;
-    padding-left: $side-paddings;
-    padding-right: $side-paddings;
+    padding-left: $side-paddings-mobile;
+    padding-right: $side-paddings-mobile;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {

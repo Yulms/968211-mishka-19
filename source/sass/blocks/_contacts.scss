@@ -17,8 +17,8 @@
 .contacts__main {
   max-width: $mobile-max-width;
   margin: 0 auto;
-  padding-left: $side-paddings;
-  padding-right: $side-paddings;
+  padding-left: $side-paddings-mobile;
+  padding-right: $side-paddings-mobile;
 
   @media (min-width: $tablet) {
     max-width: $tablet-max-width;
@@ -131,7 +131,7 @@
 
 .contacts__button {
   @media (max-width: $tablet-only) {
-    width: calc(100% - #{$side-paddings * 2});
+    width: calc(100% - #{$side-paddings-mobile * 2});
     position: absolute;
     z-index: 1;
     bottom: 39px;

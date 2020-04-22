@@ -4,13 +4,23 @@
 
 .main__header {
   min-height: 177px;
+  padding-bottom: 30px;
   background-color: #f1f1f1;
   background-repeat: no-repeat;
   background-position: 50% 0;
+
+  @include media-breakpoint-only(mobile) {
+    padding-top: 70px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    padding-top: 30px;
+  }
 }
 
 .main__header--index-page {
   background-color: #f9f9f9;
+  padding-top: 100px;
 
   @include media-breakpoint-only(mobile) {
     min-height: 300px;
@@ -28,11 +38,6 @@
   @include media-breakpoint-up(desktop) {
     background-image: url("../img/hero-desktop@1x.jpg");
   }
-}
-
-.main__header-wrapper {
-  padding-top: 100px;
-  padding-bottom: 30px;
 }
 
 .main__title {

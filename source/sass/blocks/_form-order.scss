@@ -1,38 +1,36 @@
 .form-order {
-  padding-top: 32px;
   padding-bottom: 36px;
-  overflow-x: hidden;
+
+  @include media-breakpoint-only(mobile) {
+    padding-top: 30px;
+  }
 }
 
 .form-order__entry-text {
-  margin: 0;
+  margin: 0 0 10px;
 }
 
-.form-order__group {
-  margin: 0;
-  padding: 17px 0;
-  border: 0;
+.form-order__container {
+  @include media-breakpoint-only(mobile) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 
-  @media (min-width: $tablet) {
-    position: relative;
-    z-index: 0;
-    padding: 50px 0;
+  @include media-breakpoint-up(tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-    // бэкграунд для нечетных элементов
-    &:nth-child(even)::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      height: 100%;
-      width: 100vw;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
+    &:nth-child(even) {
       background-color: #f1f1f1;
     }
   }
+}
+
+.form-order__group {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .form-order__title {
@@ -58,12 +56,16 @@
 }
 
 .form-order__title-positioner {
+
+  @include media-breakpoint-only(mobile) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $tablet) {
     position: absolute;
-    top: 64px;
+    top: 14px;
     left: 0;
     max-width: $tablet-column-width;
-    padding-right: 20px;
   }
 }
 
@@ -102,8 +104,9 @@
 }
 
 .form-order__item {
+  min-height: 52px;
+
   @media (max-width: $mobile-only) {
-    min-height: 52px;
     margin-top: 10px;
   }
 

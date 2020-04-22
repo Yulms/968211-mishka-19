@@ -1,6 +1,5 @@
 .promo-product {
   display: flex;
-  flex-direction: column;
   padding-top: 32px;
   padding-bottom: 36px;
   background-image: url("../img/bg-zigzag-line.svg");
@@ -8,26 +7,33 @@
   background-repeat: repeat-x;
   background-position: 0 100%;
 
+  @include media-breakpoint-only(mobile) {
+    flex-direction: column;
+  }
+
   @media (min-width: $tablet) {
-    flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop) {
     position: relative;
-    z-index: 0;
   }
 }
 
 .promo-product__header {
-  margin-bottom: 30px;
+  @include media-breakpoint-only(mobile) {
+    margin-bottom: 30px;
+  }
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-bottom: 55px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
@@ -96,6 +102,24 @@
   margin-top: 24px;
 }
 
+.promo-product__list {
+  margin: 0;
+}
+
+.promo-product__list-row {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.promo-product__term {
+  width: 30%;
+}
+
+.promo-product__description {
+  margin-left: 20px;
+}
+
 .promo-product__image-container {
   order: 3;
 
@@ -109,7 +133,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: -135px;
+    margin-top: -160px;
   }
 }
 

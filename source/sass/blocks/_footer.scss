@@ -1,11 +1,5 @@
 .footer {
   background-color: #f1f1f1;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    min-height: 143px;
-  }
 }
 
 .footer__wrapper {
@@ -13,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    min-height: 143px;
   }
 }
 

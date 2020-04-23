@@ -1,8 +1,8 @@
 $grid-breakpoints: (mobile: 0,
-  tablet: 772px,
+  tablet: 768px,
   desktop: 1150px) !default;
 
-$container-max-widths: (mobile: 320px, tablet: 772px, desktop: 1150px);
+$container-max-widths: (mobile: 320px, tablet: 768px, desktop: 1150px);
 
 @function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
   $n: index($breakpoint-names, $name);

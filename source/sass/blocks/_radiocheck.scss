@@ -42,15 +42,19 @@
 
 .radiocheck__label {
   z-index: 1;
-  padding: 11px 0 0 62px;
-  font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: $label-color;
   white-space: normal;
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-only(mobile) {
+    padding: 11px 0 0 62px;
+    font-size: 17px;
+  }
+
+  @include media-breakpoint-up(tablet) {
     padding: 17px 0 0 82px;
+    font-size: 19px;
   }
 }
 

@@ -82,24 +82,26 @@
     flex-direction: column;
     justify-content: space-between;
     flex-basis: $tablet-column-width * 2;
-    flex-grow: 1;
     padding-right: 44px;
   }
 
+  @include media-breakpoint-only(tablet) {
+    flex-grow: 1;
+  }
+
   @media (min-width: $desktop) {
-    flex-grow: 0;
     padding-left: $desktop-column-width;
   }
 }
 
 .promo-product__text {
   order: 1;
-  margin: 0;
+  margin: 0 0 24px 0;
 }
 
 .promo-product__features {
   order: 2;
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .promo-product__list {
@@ -123,10 +125,6 @@
 .promo-product__image-container {
   order: 3;
 
-  @media (max-width: $mobile-only) {
-    margin-top: 24px;
-  }
-
   @media (min-width: $tablet) {
     flex-basis: $tablet-column-width * 2;
     flex-grow: 1;
@@ -139,7 +137,7 @@
 
 .promo-product__price {
   order: 4;
-  margin: 28px 0;
+  margin: 0 0 28px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

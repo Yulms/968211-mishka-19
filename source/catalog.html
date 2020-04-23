@@ -252,29 +252,30 @@
     </div>
   </footer>
 
-  <div class="modal-overlay closed"></div>
-  <section class="modal closed">
-    <h2 class="modal__header">Добавить в корзину</h2>
-    <form class="option-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="option-form__fieldset">
-        <legend class="option-form__title">Выберите размер:</legend>
-        <div class="option-form__button-container">
-          <label class="radio-button option-form__radio-button">
-            <input class="radio-button__input" type="radio" name="size-radio" value="1" checked>
-            <span class="radio-button__box option-form__size-caption">s</span>
-          </label>
-          <label class="radio-button option-form__radio-button">
-            <input class="radio-button__input" type="radio" name="size-radio" value="2">
-            <span class="radio-button__box option-form__size-caption">m</span>
-          </label>
-          <label class="radio-button option-form__radio-button">
-            <input class="radio-button__input" type="radio" name="size-radio" value="2">
-            <span class="radio-button__box option-form__size-caption">l</span>
-          </label>
-        </div>
-      </fieldset>
-      <button class="button button--call2action option-form__button">Добавить</button>
-    </form>
+  <section class="modal modal--closed modal--cart">
+    <div class="modal__inner">
+      <h2 class="modal__header">Добавить в корзину</h2>
+      <form class="option-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="option-form__fieldset">
+          <legend class="option-form__title">Выберите размер:</legend>
+          <div class="option-form__button-container">
+            <label class="radio-button option-form__radio-button">
+              <input class="radio-button__input" type="radio" name="size-radio" value="1" checked>
+              <span class="radio-button__box option-form__size-caption">s</span>
+            </label>
+            <label class="radio-button option-form__radio-button">
+              <input class="radio-button__input" type="radio" name="size-radio" value="2">
+              <span class="radio-button__box option-form__size-caption">m</span>
+            </label>
+            <label class="radio-button option-form__radio-button">
+              <input class="radio-button__input" type="radio" name="size-radio" value="2">
+              <span class="radio-button__box option-form__size-caption">l</span>
+            </label>
+          </div>
+        </fieldset>
+        <button class="button button--call2action option-form__button">Добавить</button>
+      </form>
+    </div>
   </section>
 
   <script src="js/app.js"></script>

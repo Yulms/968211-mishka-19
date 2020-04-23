@@ -31,5 +31,5 @@
 }
 
 .radio-button__input:checked + .radio-button__box {
-  border: 2px solid $color-primary;
+  border-color: $color-primary;
 }

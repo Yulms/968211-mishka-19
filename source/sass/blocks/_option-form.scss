@@ -1,16 +1,14 @@
 .option-form__fieldset {
   min-width: auto;
-  margin: 27px 0 31px;
+  margin: 0 0 31px;
   padding: 0;
   border: 0;
 }
 
 .option-form__title {
+  margin-bottom: 21px;
+  padding: 0;
   text-align: center;
-}
-
-.option-form__title + .option-form__button-container {
-  margin-top: 21px;
 }
 
 .option-form__button-container {

@@ -1,15 +1,11 @@
 .reviews {
-  padding-top: 32px;
-  padding-bottom: 46px;
-  // позже перенести на другой блок
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: auto 6px;
-  background-repeat: repeat-x;
-  background-position: 0 100%;
+  @include media-breakpoint-only(mobile) {
+    padding-top: 32px;
+    padding-bottom: 46px;
+  }
 
   @media (min-width: $tablet) {
     position: relative;
-    z-index: 0;
     padding-top: 80px;
     padding-bottom: 52px;
     background-image: url("../../img/review@1x.jpg");
@@ -72,7 +68,10 @@
 
 .reviews__button-container {
   display: flex;
-  margin: 36px 0 0;
+
+  @include media-breakpoint-only(mobile) {
+    margin: 36px 0 0;
+  }
 
   @media (min-width: $tablet) {
     position: absolute;

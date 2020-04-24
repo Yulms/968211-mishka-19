@@ -1,9 +1,19 @@
-.logo {
+.logo__image {
   display: block;
 }
 
-.logo__image {
-  display: block;
+.logo__image--header {
+  @include media-breakpoint-only(mobile) {
+    width: 86px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    width: 112px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    width: 149px;
+  }
 }
 
 .logo:hover,

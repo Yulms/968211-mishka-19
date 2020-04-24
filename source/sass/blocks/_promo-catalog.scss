@@ -55,31 +55,18 @@
 
   @include media-breakpoint-only(mobile) {
     max-width: $mobile-max-width;
-    padding-left: $side-paddings-mobile;
-    padding-right: $side-paddings-mobile;
-    padding-top: 28px;
-    padding-bottom: 27px;
+    padding: 24px $side-paddings-mobile;
     font-size: 19px;
     line-height: 24px;
   }
 
-  @include media-breakpoint-only(tablet) {
-    padding-left: $side-paddings-tablet;
-    padding-right: $side-paddings-tablet;
-  }
-
   @include media-breakpoint-up(tablet) {
-    padding-left: $side-paddings-tablet;
-    padding-right: $side-paddings-tablet;
+    padding-left: 36px;
+    padding-right: 100px;
     padding-top: 30px;
     padding-bottom: 29px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @include media-breakpoint-up(desktop) {
-    padding-left: $side-paddings-desktop;
-    padding-right: $side-paddings-desktop;
   }
 }
 

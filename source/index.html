@@ -17,7 +17,9 @@
       <div class="header__logo">
         <a class="logo" href="/" title="">
           <picture class="logo__container">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image logo__image--header" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
           </picture>
         </a>
       </div>
@@ -117,12 +119,14 @@
 
     <article class="promo-product wrapper">
       <header class="promo-product__header">
-        <h2 class="title title--2 promo-product__title">Вязаные корзинки</h2>
+        <h2 class="promo-product__title">Вязаные корзинки</h2>
         <b class="promo-product__subtitle">Товар <br class="promo-product__subtitle-wrap">недели</b>
       </header>
 
       <picture class="image-container promo-product__image-container">
-        <img class="image-container__image" src="img/triple-set-desktop@1x.jpg" alt="Вязаная корзинка">
+        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+        <img class="image-container__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка">
       </picture>
 
       <div class="promo-product__inner">

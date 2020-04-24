@@ -134,6 +134,8 @@
 @media (min-width: $tablet) and (max-width: $desktop) {
   .header__nav-main .header__link {
     min-height: auto;
+    padding: 18px 0;
+    font-size: 15px;
   }
 }
 
@@ -209,7 +211,7 @@
     display: block;
     max-width: 40%;
     margin: 0;
-    padding: 25px 0;
+    padding: 18px 0;
     font-size: 15px;
     text-align: right;
   }
@@ -251,7 +253,7 @@
 
 .header__promo-link {
   @media (min-width: $desktop) {
-    padding: 25px 0;
+    padding: 18px 0;
     font-size: 15px;
     font-weight: 700;
     color: #000000;

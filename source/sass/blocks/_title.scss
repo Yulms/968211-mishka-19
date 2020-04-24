@@ -4,20 +4,29 @@
 }
 
 .title--1 {
-  font-size: 27px;
-  line-height: 30px;
+  @include media-breakpoint-only(mobile) {
+    font-size: 27px;
+    line-height: 30px;
+  }
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-only(tablet) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
 .title--2 {
-  font-size: 25px;
-  line-height: 30px;
+  @include media-breakpoint-only(mobile) {
+    font-size: 25px;
+    line-height: 32px;
+  }
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     font-size: 43px;
     line-height: 50px;
   }

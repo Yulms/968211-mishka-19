@@ -3,33 +3,24 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.nav__item {
-  @media (min-width: $tablet) {
-    display: flex;
-  }
-}
-
-.nav__list {
-  @media (min-width: $tablet) {
     margin-left: -35px;
   }
 }
 
 .nav__item {
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
+    display: flex;
     padding-left: 35px;
-    padding-right: 35px;
   }
-}
 
-.nav--main .nav__item:first-child {
-  @media (min-width: $desktop) {
-    border-right: 1px solid $border-color;
+  @include media-breakpoint-up(desktop) {
+    padding-right: 35px;
+
+    &:first-child {
+      border-right: 1px solid $border-color;
+    }
   }
 }

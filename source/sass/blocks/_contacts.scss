@@ -1,7 +1,18 @@
 .contacts {
   position: relative;
-  padding-top: 32px;
   padding-bottom: 130px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+
+  @include media-breakpoint-only(mobile) {
+    padding-top: 50px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    padding-top: 88px;
+  }
+
 
   @media (min-width: $desktop) {
     display: flex;
@@ -10,6 +21,7 @@
     margin-right: auto;
     padding-left: $side-paddings-desktop;
     padding-right: $side-paddings-desktop;
+    padding-top: 96px;
   }
 }
 

@@ -1,22 +1,29 @@
 .promo-product {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 36px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: auto 6px;
+  background-size: contain;
   background-repeat: repeat-x;
   background-position: 0 100%;
 
   @include media-breakpoint-only(mobile) {
     flex-direction: column;
+    padding-top: 27px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $tablet) {
     flex-wrap: wrap;
   }
 
+  @include media-breakpoint-only(tablet) {
+    padding-top: 45px;
+    padding-bottom: 68px;
+  }
+
   @media (min-width: $desktop) {
     position: relative;
+    padding-top: 71px;
+    padding-bottom: 96px;
   }
 }
 
@@ -38,25 +45,50 @@
 
   @media (min-width: $desktop) {
     position: relative;
-    padding-top: 55px;
+    padding-top: 52px;
     padding-left: $desktop-column-width;
   }
 }
 
 .promo-product__title {
   margin: 0;
+  font-weight: 700;
+  color: $title-color;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .promo-product__subtitle {
   font-size: 17px;
   font-weight: 700;
-  line-height: 20px;
   color: $color-primary;
   text-transform: uppercase;
+
+  @include media-breakpoint-only(mobile) {
+    line-height: 20px;
+  }
 
   @media (min-width: $tablet) {
     flex-basis: 0;
     text-align: center;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    padding: 0 27px;
+    line-height: 17px;
   }
 
   @media (min-width: $desktop) {
@@ -125,13 +157,17 @@
 .promo-product__image-container {
   order: 3;
 
+  @include media-breakpoint-only(mobile) {
+    margin-bottom: 26px;
+  }
+
   @media (min-width: $tablet) {
     flex-basis: $tablet-column-width * 2;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop) {
-    margin-top: -160px;
+    margin-top: -164px;
   }
 }
 

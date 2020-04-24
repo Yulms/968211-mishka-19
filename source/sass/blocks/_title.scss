@@ -26,9 +26,14 @@
     line-height: 32px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @include media-breakpoint-only(tablet) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

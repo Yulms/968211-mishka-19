@@ -15,6 +15,14 @@
   @media (max-width: $mobile-only) {
     display: none;
   }
+
+  @include media-breakpoint-only(tablet) {
+    flex-basis: $tablet-column-width;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    flex-basis: $desktop-column-width;
+  }
 }
 
 .footer__copyright {

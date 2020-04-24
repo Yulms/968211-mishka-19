@@ -1,5 +1,5 @@
 .main {
-  padding-bottom: 58px;
+  position: relative;
 }
 
 .main__header {
@@ -63,9 +63,18 @@
   }
 }
 
+.main__advantages {
+  @include media-breakpoint-only(tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include media-breakpoint-only(desktop) {
+    margin-bottom: 57px;
+  }
+}
+
 .main__reviews {
   @media (min-width: $tablet) {
-    margin-top: 30px;
     margin-bottom: 68px;
   }
 }

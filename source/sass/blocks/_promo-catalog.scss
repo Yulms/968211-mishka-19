@@ -1,3 +1,30 @@
+.promo-catalog {
+  @include media-breakpoint-up(tablet) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 16px;
+
+      @include media-breakpoint-only(tablet) {
+        height: 28px;
+        background-size: 770px auto;
+      }
+
+      @include media-breakpoint-up(desktop) {
+        height: 34px;
+        background-size: 1250px auto;
+      }
+    }
+  }
+}
+
 .promo-catalog__list {
   margin: 0 auto;
   padding: 0;
@@ -55,16 +82,17 @@
 
   @include media-breakpoint-only(mobile) {
     max-width: $mobile-max-width;
-    padding: 24px $side-paddings-mobile;
+    padding: 24px 100px 24px $side-paddings-mobile;
     font-size: 19px;
     line-height: 24px;
   }
 
   @include media-breakpoint-up(tablet) {
+    height: 100%;
     padding-left: 36px;
     padding-right: 100px;
-    padding-top: 30px;
-    padding-bottom: 29px;
+    padding-top: 28px;
+    padding-bottom: 31px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -89,10 +117,6 @@
 
 .promo-catalog__link:active .promo-catalog__icon-container {
   opacity: 0.3;
-}
-
-.promo-catalog__caption {
-  flex-basis: 0;
 }
 
 .promo-catalog__icon {

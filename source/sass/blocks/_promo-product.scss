@@ -1,14 +1,10 @@
 .promo-product {
   display: flex;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: contain;
-  background-repeat: repeat-x;
-  background-position: 0 100%;
 
   @include media-breakpoint-only(mobile) {
     flex-direction: column;
     padding-top: 27px;
-    padding-bottom: 42px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $tablet) {
@@ -17,26 +13,26 @@
 
   @include media-breakpoint-only(tablet) {
     padding-top: 45px;
-    padding-bottom: 68px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
     padding-top: 71px;
-    padding-bottom: 96px;
+    padding-bottom: 75px;
   }
 }
 
 .promo-product__header {
   @include media-breakpoint-only(mobile) {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 
   @include media-breakpoint-up(tablet) {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   @include media-breakpoint-only(tablet) {
@@ -112,28 +108,45 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-basis: $tablet-column-width * 2;
-    padding-right: 44px;
   }
 
   @include media-breakpoint-only(tablet) {
     flex-grow: 1;
+    padding-right: 44px;
   }
 
   @media (min-width: $desktop) {
     padding-left: $desktop-column-width;
+    padding-right: 58px;
   }
 }
 
 .promo-product__text {
   order: 1;
-  margin: 0 0 24px 0;
+
+  @include media-breakpoint-only(mobile) {
+    margin: 0 0 16px 0;
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    margin: 0 0 34px 0;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    margin: 0 0 45px 0;
+  }
 }
 
 .promo-product__features {
   order: 2;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 }
 
 .promo-product__list {
@@ -142,16 +155,16 @@
 
 .promo-product__list-row {
   display: flex;
-  padding: 12px 0;
+  padding: 8px 0;
   border-bottom: 1px solid $border-color;
 }
 
 .promo-product__term {
-  width: 30%;
+  width: 90px;
 }
 
 .promo-product__description {
-  margin-left: 20px;
+  margin-left: 7px;
 }
 
 .promo-product__image-container {
@@ -167,18 +180,26 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: -164px;
+    margin-top: -160px;
   }
 }
 
 .promo-product__price {
   order: 4;
-  margin: 0 0 28px 0;
-  font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: $controls-color;
+
+  @include media-breakpoint-only(mobile) {
+    margin: 0 0 24px 0;
+    font-size: 17px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    margin: auto 0 32px 0;
+    font-size: 20px;
+  }
 }
 
 .promo-product__button {

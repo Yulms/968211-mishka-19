@@ -1,20 +1,25 @@
 .reviews {
   @include media-breakpoint-only(mobile) {
-    padding-top: 32px;
+    padding-top: 21px;
     padding-bottom: 46px;
   }
 
   @media (min-width: $tablet) {
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 52px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  @media (min-width: $desktop) {
-    padding-bottom: 102px;
+  @include media-breakpoint-only(tablet) {
+    padding-top: 77px;
+    padding-bottom: 17px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    padding-top: 71px;
+    padding-bottom: 66px;
+    background-position: $side-paddings-desktop 0;
   }
 }
 
@@ -26,17 +31,24 @@
 
 .reviews__title {
   @include media-breakpoint-only(mobile) {
-    margin: 0 0 38px 0;
+    margin: 0 0 23px 0;
   }
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     max-width: calc(100% - 200px);
-    margin: 0 0 64px 0;
   }
+
+  @include media-breakpoint-up(tablet) {
+    margin: 0 0 48px 0;
+  }
+
+  // @include media-breakpoint-up(desktop) {
+  //   margin: 0 0 48px 0;
+  // }
 }
 
 .reviews__list {
-  margin: 0;
+  margin: 0 0 27px 0;
   padding: 0;
   list-style: none;
 }
@@ -49,11 +61,15 @@
   line-height: 30px;
 
   @include media-breakpoint-only(mobile) {
-    margin: 0 0 40px 0;
+    margin: 0 0 27px 0;
   }
 
-  @include media-breakpoint-up(tablet) {
-    margin: 0 0 68px 0;
+  @include media-breakpoint-only(tablet) {
+    margin: 0 0 58px 0;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    margin: 0 0 39px 0;
   }
 }
 
@@ -64,24 +80,41 @@
 
 .reviews__name {
   font-weight: 700;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 17px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(mobile) {
+    font-size: 17px;
+  }
+}
+
+.reviews__login {
+  font-size: 17px;
+  line-height: 35px;
 }
 
 .reviews__button-container {
   display: flex;
 
   @include media-breakpoint-only(mobile) {
-    margin: 36px 0 0;
+    margin: 0 0 38px 0;
   }
 
   @media (min-width: $tablet) {
     position: absolute;
-    bottom: 52px;
+    bottom: 50px;
     right: $side-paddings-tablet;
     width: 175px;
   }
 
   @media (min-width: $desktop) {
-    bottom: 102px;
+    bottom: 100px;
     right: $side-paddings-desktop;
   }
 }
@@ -97,7 +130,6 @@
 .reviews__button {
   @media (max-width: $mobile-only) {
     width: 100%;
-    margin-top: 38px;
   }
 
   @media (min-width: $tablet) {

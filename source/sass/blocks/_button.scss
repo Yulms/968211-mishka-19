@@ -14,13 +14,20 @@
 
 .button--primary {
   padding: 14px;
-  font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $controls-color;
   text-transform: uppercase;
   border: 2px solid $controls-color;
   outline: none;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 17px;
+  }
 }
 
 .button--primary:hover:not(:disabled),

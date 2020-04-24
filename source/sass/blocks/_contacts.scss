@@ -1,41 +1,73 @@
 .contacts {
   position: relative;
-  padding-bottom: 130px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: contain;
-  background-repeat: repeat-x;
 
   @include media-breakpoint-only(mobile) {
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 130px;
   }
 
   @include media-breakpoint-only(tablet) {
-    padding-top: 88px;
+    padding-top: 62px;
+    padding-bottom: 164px;
   }
 
-
-  @media (min-width: $desktop) {
+  @include media-breakpoint-up(desktop) {
     display: flex;
     max-width: $desktop-max-width;
     margin-left: auto;
     margin-right: auto;
-    padding-left: $side-paddings-desktop;
-    padding-right: $side-paddings-desktop;
-    padding-top: 96px;
+    padding: 93px $side-paddings-desktop 105px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+
+    @include media-breakpoint-down(tablet) {
+      left: 0;
+      width: 100%;
+    }
+
+    @include media-breakpoint-only(mobile) {
+      height: 6px;
+      transform: translateY(-40px);
+      background-size: 320px auto;
+      background-position: -10px 0;
+    }
+
+    @include media-breakpoint-only(tablet) {
+      height: 15px;
+      transform: translateY(-62px);
+      background-size: 771px auto;
+      background-position: 17px 0;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      left: $side-paddings-desktop;
+      width: calc(100% - #{$side-paddings-desktop} * 2);
+      height: 23px;
+      transform: translateY(-93px);
+      background-size: 1050px auto;
+      background-position: 26px 0;
+    }
+  }
+
+  @media (min-width: $desktop) {}
 }
 
 .contacts__main {
   @include media-breakpoint-only(mobile) {
     max-width: $mobile-max-width;
-    margin: 0 auto 42px;
+    margin: 0 auto 37px;
     padding-left: $side-paddings-mobile;
     padding-right: $side-paddings-mobile;
   }
 
   @include media-breakpoint-only(tablet) {
     max-width: $tablet-max-width;
-    margin: 0 auto 61px;
+    margin: 0 auto 56px;
     padding-left: $side-paddings-tablet;
     padding-right: $side-paddings-tablet;
   }
@@ -45,7 +77,7 @@
     display: flex;
     flex-direction: column;
     width: $desktop-column-width * 3;
-    padding-top: 74px;
+    padding-top: 70px;
     padding-left: $desktop-column-width;
     padding-right: 26px;
   }
@@ -53,18 +85,29 @@
 
 .contacts__header {
   @include media-breakpoint-only(mobile) {
-    margin: 0 0 42px 0;
+    margin: 0 0 26px 0;
   }
 
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 65px 0;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    margin: 0 0 34px 0;
+  }
+
+  @include media-breakpoint-up(mobile) {
+    margin: 0 0 49px 0;
   }
 }
 
 .contacts__header-icon {
+  @include media-breakpoint-only(tablet) {
+    flex-shrink: 0;
+  }
+
   @media (max-width: $mobile-only) {
     display: none;
   }
@@ -82,8 +125,14 @@
   color: $title-color;
   font-size: 18px;
   line-height: 30px;
+  word-break: break-word;
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-only(tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include media-breakpoint-up(desktop) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -92,6 +141,11 @@
 .contacts__list {
   padding: 0;
   list-style: none;
+  line-height: 30px;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 15px;
+  }
 
   @include media-breakpoint-down(tablet) {
     margin: 0;
@@ -99,6 +153,11 @@
 
   @include media-breakpoint-only(tablet) {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 17px;
   }
 
   @include media-breakpoint-up(desktop) {
@@ -108,6 +167,10 @@
 
 .contacts__list-row {
   display: flex;
+
+  @include media-breakpoint-only(tablet) {
+    width: 50%;
+  }
 }
 
 .contacts__list-row + .contacts__list-row {
@@ -115,17 +178,13 @@
     margin-top: 30px;
   }
 
-  @include media-breakpoint-only(tablet) {
-    margin-left: 55px;
-  }
-
   @include media-breakpoint-only(desktop) {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 
 .contacts__term {
-  margin-right: 30px;
+  width: 78px;
   flex-shrink: 0;
 }
 
@@ -160,14 +219,18 @@
   @include media-breakpoint-down(tablet) {
     position: absolute;
     z-index: 1;
-    bottom: 39px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @include media-breakpoint-only(mobile) {
+    bottom: 39px;
     width: calc(100% - #{$side-paddings-mobile * 2});
     max-width: $mobile-max-width;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    bottom: 57px;
   }
 
   @media (min-width: $tablet) {

@@ -8,6 +8,41 @@
   <meta name="description" content="Магазин Мишка - лучшие поделки в подмосковье">
   <meta name="keywords" content="поделки">
   <link rel="stylesheet" href="css/style.css">
+
+
+
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background-position: 50% -316px;
+        background-image: url("mockups/form/mishka-form-mobile.png");
+      }
+    }
+
+    @media (min-width: 768px) {
+      html {
+        background-image: url("mockups/form/mishka-form-tablet.png");
+      }
+    }
+
+    @media (min-width: 1150px) {
+      html {
+        background-image: url("mockups/form/mishka-form-desktop.png");
+      }
+    }
+  </style>
+  <link href="mockups/pixel-glass/styles.css" rel="stylesheet">
+  <script src="mockups/pixel-glass/script.js"></script>
+  <!-- Pixel Glass -->
+
+
+
 </head>
 
 <body>
@@ -18,7 +53,9 @@
       <div class="header__logo">
         <a class="logo" href="/" title="">
           <picture class="logo__container">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image logo__image--header" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
           </picture>
         </a>
       </div>
@@ -90,7 +127,7 @@
     </div>
 
     <section class="form-order">
-      <div class="wrapper">
+      <div class="wrapper form-order__wrapper-entry">
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="form-order__entry-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>

@@ -15,20 +15,35 @@
 
 .radiocheck__box {
   position: absolute;
-  width: 40px;
-  height: 40px;
   flex-shrink: 0;
   background-color: transparent;
   border: 2px solid $controls-color;
-
-  @media (min-width: $tablet) {
-    width: 52px;
-    height: 52px;
-  }
 }
 
 .radiocheck--radio .radiocheck__box {
   border-radius: 50%;
+
+  @include media-breakpoint-only(mobile) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    width: 52px;
+    height: 53px;
+  }
+}
+
+.radiocheck--check .radiocheck__box {
+  @include media-breakpoint-only(mobile) {
+    width: 40px;
+    height: 39px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    width: 54px;
+    height: 52px;
+  }
 }
 
 .radiocheck__input:hover:not(:disabled) + .radiocheck__box,

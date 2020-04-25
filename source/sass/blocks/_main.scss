@@ -3,24 +3,56 @@
 }
 
 .main__header {
-  min-height: 177px;
   padding-bottom: 30px;
   background-color: #f1f1f1;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 
   @include media-breakpoint-only(mobile) {
+    min-height: 176px;
     padding-top: 70px;
   }
 
+  @include media-breakpoint-only(tablet) {
+    min-height: 166px;
+  }
+
   @include media-breakpoint-up(tablet) {
-    padding-top: 100px;
+    position: relative;
+    padding-top: 35px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    min-height: 196px;
+  }
+
+  &::before {
+    @include media-breakpoint-up(tablet) {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 16px;
+    }
+
+    @include media-breakpoint-only(tablet) {
+      height: 28px;
+      background-size: 770px auto;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      height: 34px;
+      background-size: 1150px auto;
+    }
   }
 }
 
-.main__header--index-page {
+.main__header--cute-stuff {
   background-color: #f9f9f9;
   background-position: center bottom;
+  background-repeat: no-repeat;
 
   @include media-breakpoint-only(mobile) {
     min-height: 355px;
@@ -38,6 +70,12 @@
 
   @include media-breakpoint-up(desktop) {
     background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  &::before {
+    @include media-breakpoint-up(desktop) {
+      background-size: 1250px auto;
+    }
   }
 }
 
@@ -57,12 +95,6 @@
   }
 }
 
-.main__products {
-  @media (min-width: $tablet) {
-    margin-top: 30px;
-  }
-}
-
 .main__advantages {
   @include media-breakpoint-only(tablet) {
     margin-bottom: 50px;
@@ -76,5 +108,15 @@
 .main__reviews {
   @media (min-width: $tablet) {
     margin-bottom: 68px;
+  }
+}
+
+.main__products {
+  @include media-breakpoint-only(tablet) {
+    margin-bottom: 23px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    margin-bottom: 27px;
   }
 }

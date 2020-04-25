@@ -1,3 +1,17 @@
+.promo-video {
+  @include media-breakpoint-only(mobile) {
+    padding-bottom: 57px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    padding-bottom: 75px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    padding-bottom: 105px;
+  }
+}
+
 .promo-video__inner {
   display: flex;
 
@@ -31,7 +45,7 @@
   z-index: 0;
 
   @media (max-width: $mobile-only) {
-    margin: 0 -34px 34px;
+    margin: 0 -34px 28px;
   }
 
   @media (min-width: $desktop) {
@@ -60,38 +74,46 @@
 }
 
 .promo-video__description {
-  padding: 0 34px 33px;
   border: 1px solid $border-color;
 
   @media (max-width: $mobile-only) {
     display: contents;
+    padding: 0 34px 33px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    padding: 0 41px 33px;
   }
 
   @media (min-width: $desktop) {
     width: 35%;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 79px;
+    padding-right: 57px;
   }
 }
 
 .promo-video__header-container {
   display: flex;
-  align-items: center;
 
-  @media (max-width: $mobile-only) {
+  @include media-breakpoint-only(mobile) {
     order: -1;
-    padding-top: 29px;
-    padding-bottom: 26px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @include media-breakpoint-down(tablet) {
+    align-items: center;
   }
 
   @include media-breakpoint-only(tablet) {
-    padding-top: 41px;
-    padding-bottom: 39px;
+    padding-top: 38px;
+    padding-bottom: 32px;
   }
 
   @include media-breakpoint-up(desktop) {
+    flex-direction: column;
     padding-top: 46px;
-    padding-bottom: 40px;
+    padding-bottom: 33px;
   }
 }
 
@@ -111,24 +133,43 @@
 
 .promo-video__header-icon {
   flex-shrink: 0;
-  margin-right: 25px;
   fill: $color-primary;
-}
-
-.promo-video__text {
-  font-size: 13px;
 
   @include media-breakpoint-only(mobile) {
-    margin: 0 0 28px 0;
+    margin-right: 24px;
   }
 
   @include media-breakpoint-only(tablet) {
-    margin: 0 0 40px 0;
+    margin-right: 32px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    margin-bottom: 27px;
+  }
+}
+
+.promo-video__text {
+  @include media-breakpoint-only(mobile) {
+    margin: 0 0 25px 0;
+    font-size: 13px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    margin: 0 0 35px 0;
   }
 
   @include media-breakpoint-only(desktop) {
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
   }
+}
+
+.promo-video__button-icon {
+  display: block;
 }
 
 .promo-video__button-order {

@@ -1,11 +1,13 @@
 .product-card {
   position: relative;
   display: flex;
-  flex-direction: column;
-  border: 1px solid $border-color;
 
-  @media (min-width: $tablet) and (max-width: $tablet-only) {
-    flex-direction: row;
+  @include media-breakpoint-only(mobile) {
+    flex-direction: column;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    flex-direction: column;
   }
 }
 
@@ -19,6 +21,10 @@
 }
 
 .product-card__image-link {
+  @include media-breakpoint-only(tablet) {
+    flex-shrink: 0;
+  }
+
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     width: $tablet-column-width * 2;
   }
@@ -27,33 +33,59 @@
 .product-card__info {
   display: flex;
   flex-direction: column;
-  padding: 30px 28px 0;
   flex-grow: 1;
+  padding: 26px 26px 0;
+  border: 1px solid $border-color;
 }
 
 .product-card__link {
+  margin-bottom: 5px;
   text-decoration: none;
   outline: none;
 }
 
 .product-card__title {
-  margin: 0 0 17px 0;
-  font-size: 17px;
+  margin: 0;
   font-weight: 700;
   color: #000000;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 17px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 20px;
+  }
+
 }
 
 .product-card__features {
-  margin: 0;
-  font-size: 13px;
+  line-height: 30px;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 13px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-down(tablet) {
+    margin: 0 0 19px 0;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    margin: 0 0 14px 0;
+  }
+
 }
 
 .product-card__offer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 27px 0 0;
-  padding: 27px 0 30px;
+  margin: 0;
+  padding: 21px 0 27px;
   border-top: 1px solid $border-color;
 
   @media (min-width: $tablet) {
@@ -63,12 +95,20 @@
 
 .product-card__price {
   color: #000000;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 17px;
+  }
 }
 
 .product-card__button {
   position: absolute;
   right: 0;
-  padding: 20px 28px;
+  padding: 20px 30px;
   outline: none;
 }
 

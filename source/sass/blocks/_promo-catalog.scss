@@ -1,27 +1,6 @@
 .promo-catalog {
   @include media-breakpoint-up(tablet) {
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-image: url("/img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: 50% 16px;
-
-      @include media-breakpoint-only(tablet) {
-        height: 28px;
-        background-size: 770px auto;
-      }
-
-      @include media-breakpoint-up(desktop) {
-        height: 34px;
-        background-size: 1250px auto;
-      }
-    }
   }
 }
 

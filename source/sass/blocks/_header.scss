@@ -74,6 +74,12 @@
   }
 }
 
+.header--no-js .header__toggle {
+  @include media-breakpoint-only(mobile) {
+    display: none;
+  }
+}
+
 .header__nav-main {
   @include media-breakpoint-only(tablet) {
     order: 1;

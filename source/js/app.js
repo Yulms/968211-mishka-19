@@ -3,6 +3,7 @@
 const pageHeader = document.querySelector(".header");
 // без включенного js меню будет показано по умолчанию
 pageHeader.classList.add("header--closed");
+pageHeader.classList.remove("header--no-js");
 const buttonToggle = document.querySelector(".header__toggle");
 buttonToggle.addEventListener("click", function(evt) {
   evt.preventDefault();

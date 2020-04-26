@@ -1,17 +1,17 @@
 .contacts {
   position: relative;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding-top: 40px;
     padding-bottom: 128px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-top: 62px;
     padding-bottom: 164px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     display: flex;
     max-width: $desktop-max-width;
     margin-left: auto;
@@ -25,26 +25,26 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
 
-    @include media-breakpoint-down(tablet) {
+    @media (max-width: $tablet-only) {
       left: 0;
       width: 100%;
     }
 
-    @include media-breakpoint-only(mobile) {
+    @media (max-width: $mobile-only) {
       height: 6px;
       transform: translateY(-40px);
       background-size: 320px auto;
       background-position: -10px 0;
     }
 
-    @include media-breakpoint-only(tablet) {
+    @media (min-width: $tablet) and (max-width: $tablet-only) {
       height: 15px;
       transform: translateY(-62px);
       background-size: 771px auto;
       background-position: 17px 0;
     }
 
-    @include media-breakpoint-up(desktop) {
+    @media (min-width: $desktop) {
       left: $side-paddings-desktop;
       width: calc(100% - #{$side-paddings-desktop} * 2);
       height: 23px;
@@ -56,14 +56,14 @@
 }
 
 .contacts__main {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     max-width: $mobile-max-width;
     margin: 0 auto 37px;
     padding-left: $side-paddings-mobile;
     padding-right: $side-paddings-mobile;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     max-width: $tablet-max-width;
     margin: 0 auto 56px;
     padding-left: $side-paddings-tablet;
@@ -82,7 +82,7 @@
 }
 
 .contacts__header {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: 0 0 26px 0;
   }
 
@@ -92,17 +92,17 @@
     justify-content: space-between;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin: 0 0 34px 0;
   }
 
-  @include media-breakpoint-up(mobile) {
+  @media (min-width: $desktop) {
     margin: 0 0 49px 0;
   }
 }
 
 .contacts__header-icon {
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     flex-shrink: 0;
   }
 
@@ -125,12 +125,12 @@
   line-height: 30px;
   word-break: break-word;
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     font-size: 43px;
     line-height: 50px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -141,24 +141,24 @@
   list-style: none;
   line-height: 30px;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 15px;
   }
 
-  @include media-breakpoint-down(tablet) {
+  @media (max-width: $tablet-only) {
     margin: 0;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 30px 0;
   }
 }
@@ -166,17 +166,17 @@
 .contacts__list-row {
   display: flex;
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     width: 50%;
   }
 }
 
 .contacts__list-row + .contacts__list-row {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-top: 30px;
   }
 
-  @include media-breakpoint-only(desktop) {
+  @media (min-width: $desktop) {
     margin-top: 30px;
   }
 }
@@ -214,20 +214,20 @@
 }
 
 .contacts__button {
-  @include media-breakpoint-down(tablet) {
+  @media (max-width: $tablet-only) {
     position: absolute;
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     bottom: 39px;
     width: calc(100% - #{$side-paddings-mobile * 2});
     max-width: $mobile-max-width;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     bottom: 57px;
   }
 

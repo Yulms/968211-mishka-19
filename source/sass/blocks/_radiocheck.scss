@@ -5,11 +5,11 @@
   color: $label-color;
   white-space: normal;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 17px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 19px;
   }
 }
@@ -31,11 +31,11 @@
   background-color: transparent;
   border: 2px solid $controls-color;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-right: 24px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     margin-right: 27px;
   }
 }
@@ -43,24 +43,24 @@
 .radiocheck__box--radio {
   border-radius: 50%;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     width: 40px;
     height: 40px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     width: 52px;
     height: 53px;
   }
 }
 
 .radiocheck__box--check {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     width: 40px;
     height: 39px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     width: 54px;
     height: 52px;
   }
@@ -69,11 +69,11 @@
 .radiocheck__caption {
   position: relative;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     top: 10px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     top: 15px;
   }
 }

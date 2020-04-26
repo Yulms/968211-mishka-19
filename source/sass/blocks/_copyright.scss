@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding-top: 22px;
     padding-bottom: 23px;
   }

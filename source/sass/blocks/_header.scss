@@ -75,13 +75,13 @@
 }
 
 .header--no-js .header__toggle {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     display: none;
   }
 }
 
 .header__nav-main {
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     order: 1;
     position: relative;
     flex-basis: 60%;
@@ -161,7 +161,7 @@
 .header__icon {
   opacity: 0.2;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     position: absolute;
     left: 32px;
     top: 50%;
@@ -202,7 +202,7 @@
 }
 
 .header__offer-text {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     display: none;
   }
 
@@ -225,7 +225,7 @@
 }
 
 .header__promo-list {
-  @include media-breakpoint-down(tablet) {
+  @media (max-width: $tablet-only) {
     display: none;
   }
 

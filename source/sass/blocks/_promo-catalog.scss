@@ -1,5 +1,5 @@
 .promo-catalog {
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     position: relative;
   }
 }
@@ -9,18 +9,18 @@
   padding: 0;
   list-style: none;
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     max-width: $tablet-max-width;
     padding-left: $side-paddings-tablet;
     padding-right: $side-paddings-tablet;
   }
 
-  @include media-breakpoint-only(desktop) {
+  @media (min-width: $desktop) {
     max-width: $desktop-max-width;
     padding-left: $side-paddings-desktop;
     padding-right: $side-paddings-desktop;
@@ -59,14 +59,14 @@
   text-decoration: none;
   outline: none;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     max-width: $mobile-max-width;
     padding: 24px 100px 24px $side-paddings-mobile;
     font-size: 19px;
     line-height: 24px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     height: 100%;
     padding-left: 36px;
     padding-right: 100px;
@@ -83,12 +83,12 @@
   width: 60px;
   height: 62px;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     right: 28px;
     justify-content: center;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     right: 35px;
     justify-content: flex-end;
   }

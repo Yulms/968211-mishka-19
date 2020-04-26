@@ -9,11 +9,11 @@
   transform: translateY(-50%);
   opacity: 0.2;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     right: 6px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     right: 24px;
   }
 }
@@ -29,13 +29,13 @@
   background-color: transparent;
   outline: 0;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding: 16px 18px 16px 0;
     font-size: 17px;
     line-height: 18px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     padding: 13px 18px;
     font-size: 19px;
   }
@@ -58,11 +58,11 @@
   resize: none;
   border: 2px solid $label-color;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding: 14px 18px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     padding: 10px 14px;
   }
 }
@@ -87,11 +87,11 @@
   font-weight: 700;
   color: $label-color;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 17px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 19px;
   }
 }

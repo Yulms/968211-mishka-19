@@ -1,7 +1,7 @@
 .promo-product {
   display: flex;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     flex-direction: column;
     padding-top: 27px;
     padding-bottom: 36px;
@@ -11,7 +11,7 @@
     flex-wrap: wrap;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-top: 45px;
     padding-bottom: 59px;
   }
@@ -24,18 +24,18 @@
 }
 
 .promo-product__header {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 22px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
     width: 100%;
     margin-bottom: 50px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     justify-content: space-between;
   }
 
@@ -51,17 +51,17 @@
   font-weight: 700;
   color: $title-color;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 25px;
     line-height: 32px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     font-size: 43px;
     line-height: 50px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -73,7 +73,7 @@
   color: $color-primary;
   text-transform: uppercase;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     line-height: 20px;
   }
 
@@ -82,7 +82,7 @@
     text-align: center;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     padding: 0 27px;
     line-height: 17px;
   }
@@ -111,7 +111,7 @@
     flex-basis: $tablet-column-width * 2;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     flex-grow: 1;
     padding-right: 44px;
   }
@@ -125,21 +125,21 @@
 .promo-product__text {
   order: 1;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: 0 0 16px 0;
     font-size: 15px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
     line-height: 30px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin: 0 0 34px 0;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 45px 0;
   }
 }
@@ -170,7 +170,7 @@
 .promo-product__image-container {
   order: 3;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 26px;
   }
 
@@ -191,12 +191,12 @@
   text-align: center;
   color: $controls-color;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: 0 0 24px 0;
     font-size: 17px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     margin: auto 0 32px 0;
     font-size: 20px;
   }

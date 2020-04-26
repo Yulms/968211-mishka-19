@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     flex-direction: column;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     flex-direction: column;
   }
 }
@@ -21,7 +21,7 @@
 }
 
 .product-card__image-link {
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     flex-shrink: 0;
   }
 
@@ -49,11 +49,11 @@
   font-weight: 700;
   color: #000000;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 17px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 20px;
   }
 }
@@ -61,19 +61,19 @@
 .product-card__features {
   line-height: 30px;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 13px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 15px;
   }
 
-  @include media-breakpoint-down(tablet) {
+  @media (max-width: $tablet-only) {
     margin: 0 0 19px 0;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 14px 0;
   }
 }
@@ -94,11 +94,11 @@
 .product-card__price {
   color: #000000;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 15px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
   }
 }

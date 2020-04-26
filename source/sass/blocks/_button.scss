@@ -21,11 +21,11 @@
   border: 2px solid $controls-color;
   outline: none;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 18px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
   }
 }

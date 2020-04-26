@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -35px;
@@ -11,12 +11,12 @@
 }
 
 .nav__item {
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     padding-left: 35px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-right: 35px;
 
     &:first-child {

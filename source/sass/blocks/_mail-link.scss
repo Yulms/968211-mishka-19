@@ -4,11 +4,11 @@
   color: $text-color;
   text-decoration: none;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 15px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
   }
 }

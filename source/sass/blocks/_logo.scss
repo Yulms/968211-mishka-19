@@ -3,15 +3,15 @@
 }
 
 .logo__image--header {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     width: 86px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     width: 112px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     width: 149px;
   }
 }

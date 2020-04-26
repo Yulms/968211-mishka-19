@@ -1,32 +1,32 @@
 .form-order {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding-top: 22px;
     padding-bottom: 56px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-top: 72px;
     padding-bottom: 50px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-top: 120px;
     padding-bottom: 50px;
   }
 }
 
 .form-order__entry {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 10px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: 5px;
   }
 }
 
 .form-order__entry-inner {
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-left: $desktop-column-width;
     padding-right: $desktop-column-width;
   }
@@ -35,23 +35,23 @@
 .form-order__entry-text {
   margin: 0;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 13px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
     line-height: 30px;
   }
 }
 
 .form-order__container {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding-top: 10px;
     padding-bottom: 16px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -93,28 +93,28 @@
 }
 
 .form-order__title-positioner {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 21px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     position: absolute;
     top: 14px;
     left: 0;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     max-width: $tablet-column-width;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     width: $desktop-column-width;
     text-align: center;
   }
 }
 
 .form-order__title-unflow {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 8px;
   }
 
@@ -122,33 +122,33 @@
     position: absolute;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     max-width: $tablet-column-width;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     width: $desktop-column-width;
     text-align: center;
   }
 }
 
 .form-order__field-column {
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     width: 100%;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-left: $tablet-column-width;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-left: $desktop-column-width;
     padding-right: $desktop-column-width;
   }
 }
 
 .form-order__field-column--wider {
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-right: $desktop-column-width * 5 / 8;
   }
 }
@@ -176,7 +176,6 @@
 }
 
 .form-order__item {
-
   @media (max-width: $mobile-only) {
     margin-top: 22px;
   }
@@ -197,11 +196,11 @@
 .form-order__text-input {
   display: flex;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     flex-direction: column;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     align-items: center;
   }
 }
@@ -209,11 +208,11 @@
 .form-order__text-area {
   display: flex;
 
-  @include media-breakpoint-down(tablet) {
+  @media (max-width: $tablet-only) {
     height: 145px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     height: 140px;
   }
 }
@@ -225,19 +224,19 @@
     align-items: center;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-left: $desktop-column-width;
     padding-right: $desktop-column-width;
   }
 }
 
 .form-order__footnote {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 14px;
     line-height: 16px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     font-size: 17px;
     line-height: 30px;
   }

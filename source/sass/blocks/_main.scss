@@ -6,26 +6,26 @@
   padding-bottom: 30px;
   background-color: #f1f1f1;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     min-height: 176px;
     padding-top: 70px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     min-height: 166px;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     position: relative;
     padding-top: 35px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     min-height: 196px;
   }
 
   &::before {
-    @include media-breakpoint-up(tablet) {
+    @media (min-width: $tablet) {
       content: "";
       position: absolute;
       z-index: 1;
@@ -37,12 +37,12 @@
       background-position: 50% 16px;
     }
 
-    @include media-breakpoint-only(tablet) {
+    @media (min-width: $tablet) and (max-width: $tablet-only) {
       height: 28px;
       background-size: 770px auto;
     }
 
-    @include media-breakpoint-up(desktop) {
+    @media (min-width: $desktop) {
       height: 34px;
       background-size: 1150px auto;
     }
@@ -54,26 +54,26 @@
   background-position: center bottom;
   background-repeat: no-repeat;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     min-height: 355px;
     background-image: url("../img/hero-mobile@1x.jpg");
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     background-image: url("../img/hero-tablet@1x.jpg");
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     padding-top: 94px;
     min-height: 686px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   &::before {
-    @include media-breakpoint-up(desktop) {
+    @media (min-width: $desktop) {
       background-size: 1250px auto;
     }
   }
@@ -86,7 +86,7 @@
 }
 
 .main__promo-catalog {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-top: -73px;
   }
 
@@ -96,11 +96,11 @@
 }
 
 .main__advantages {
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin-bottom: 50px;
   }
 
-  @include media-breakpoint-only(desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 57px;
   }
 }
@@ -112,11 +112,11 @@
 }
 
 .main__products {
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin-bottom: 23px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 27px;
   }
 }

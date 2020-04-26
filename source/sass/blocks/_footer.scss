@@ -16,11 +16,11 @@
     display: none;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     flex-basis: $tablet-column-width;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     flex-basis: $desktop-column-width;
   }
 }

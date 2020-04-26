@@ -1,5 +1,5 @@
 .reviews {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding-top: 21px;
     padding-bottom: 46px;
   }
@@ -11,12 +11,12 @@
     background-size: contain;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-top: 77px;
     padding-bottom: 17px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     padding-top: 71px;
     padding-bottom: 66px;
     background-position: $side-paddings-desktop 0;
@@ -30,11 +30,11 @@
 }
 
 .reviews__title {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: 0 0 23px 0;
   }
 
-  @include media-breakpoint-up(tablet) {
+  @media (min-width: $tablet) {
     max-width: calc(100% - 200px);
     margin: 0 0 48px 0;
   }
@@ -53,15 +53,15 @@
 .reviews__review-text {
   line-height: 30px;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: 0 0 27px 0;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin: 0 0 58px 0;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 39px 0;
   }
 }
@@ -74,15 +74,15 @@
 .reviews__name {
   font-weight: 700;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     font-size: 17px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     font-size: 18px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     font-size: 17px;
   }
 }
@@ -95,7 +95,7 @@
 .reviews__button-container {
   display: flex;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: 0 0 38px 0;
   }
 
@@ -103,13 +103,13 @@
     position: absolute;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     bottom: 50px;
     right: $side-paddings-tablet;
     width: 175px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     bottom: 100px;
     right: $side-paddings-desktop;
     width: $desktop-column-width;
@@ -135,12 +135,12 @@
     top: 80px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     right: $side-paddings-tablet;
     width: 175px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     right: $side-paddings-desktop;
     width: $desktop-column-width;
   }

@@ -1,15 +1,15 @@
 .products {
   padding-bottom: 30px;
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     padding-top: 30px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-top: 79px;
   }
 
-  @include media-breakpoint-only(desktop) {
+  @media (min-width: $desktop) {
     padding-top: 127px;
   }
 }
@@ -19,15 +19,15 @@
   padding: 0;
   list-style: none;
 
-  @include media-breakpoint-down(tablet) {
+  @media (max-width: $tablet-only) {
     flex-direction: column;
   }
 
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin: -30px 0 0 -30px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin: -54px 0 0 -54px;
   }
 
@@ -37,17 +37,17 @@
 }
 
 .products__item {
-  @include media-breakpoint-only(mobile) {
+  @media (max-width: $mobile-only) {
     margin-top: 30px;
     margin-left: 30px;
   }
 
-  @include media-breakpoint-only(tablet) {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin-top: 54px;
     margin-left: 54px;
   }
 
-  @include media-breakpoint-up(desktop) {
+  @media (min-width: $desktop) {
     flex-basis: 300px;
     flex-grow: 1;
     margin-top: 52px;

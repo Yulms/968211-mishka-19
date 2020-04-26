@@ -1,5 +1,17 @@
 .radiocheck {
   display: flex;
+  line-height: 18px;
+  font-weight: 700;
+  color: $label-color;
+  white-space: normal;
+
+  @include media-breakpoint-only(mobile) {
+    font-size: 17px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 19px;
+  }
 }
 
 .radiocheck__input {
@@ -14,13 +26,21 @@
 }
 
 .radiocheck__box {
-  position: absolute;
+  position: relative;
   flex-shrink: 0;
   background-color: transparent;
   border: 2px solid $controls-color;
+
+  @include media-breakpoint-only(mobile) {
+    margin-right: 24px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    margin-right: 27px;
+  }
 }
 
-.radiocheck--radio .radiocheck__box {
+.radiocheck__box--radio {
   border-radius: 50%;
 
   @include media-breakpoint-only(mobile) {
@@ -34,7 +54,7 @@
   }
 }
 
-.radiocheck--check .radiocheck__box {
+.radiocheck__box--check {
   @include media-breakpoint-only(mobile) {
     width: 40px;
     height: 39px;
@@ -43,6 +63,18 @@
   @include media-breakpoint-up(tablet) {
     width: 54px;
     height: 52px;
+  }
+}
+
+.radiocheck__caption {
+  position: relative;
+
+  @include media-breakpoint-only(mobile) {
+    top: 10px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    top: 15px;
   }
 }
 
@@ -55,25 +87,7 @@
   border-color: rgba($controls-color, 0.3);
 }
 
-.radiocheck__label {
-  z-index: 1;
-  line-height: 18px;
-  font-weight: 700;
-  color: $label-color;
-  white-space: normal;
-
-  @include media-breakpoint-only(mobile) {
-    padding: 11px 0 0 62px;
-    font-size: 17px;
-  }
-
-  @include media-breakpoint-up(tablet) {
-    padding: 17px 0 0 82px;
-    font-size: 19px;
-  }
-}
-
-.radiocheck--radio .radiocheck__input:checked + .radiocheck__box::after {
+.radiocheck__input:checked + .radiocheck__box--radio::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -90,7 +104,7 @@
   }
 }
 
-.radiocheck--check .radiocheck__input:checked + .radiocheck__box::after {
+.radiocheck__input:checked + .radiocheck__box--check::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -110,6 +124,6 @@
 }
 
 .radiocheck__input:disabled + .radiocheck__box,
-.radiocheck__input:disabled ~ .radiocheck__label {
+.radiocheck__input:disabled ~ .radiocheck__caption {
   opacity: 0.4;
 }

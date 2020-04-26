@@ -36,15 +36,8 @@
 
   @include media-breakpoint-up(tablet) {
     max-width: calc(100% - 200px);
-  }
-
-  @include media-breakpoint-up(tablet) {
     margin: 0 0 48px 0;
   }
-
-  // @include media-breakpoint-up(desktop) {
-  //   margin: 0 0 48px 0;
-  // }
 }
 
 .reviews__list {
@@ -89,7 +82,7 @@
     font-size: 18px;
   }
 
-  @include media-breakpoint-up(mobile) {
+  @include media-breakpoint-up(desktop) {
     font-size: 17px;
   }
 }
@@ -108,14 +101,18 @@
 
   @media (min-width: $tablet) {
     position: absolute;
+  }
+
+  @include media-breakpoint-only(tablet) {
     bottom: 50px;
     right: $side-paddings-tablet;
     width: 175px;
   }
 
-  @media (min-width: $desktop) {
+  @include media-breakpoint-up(desktop) {
     bottom: 100px;
     right: $side-paddings-desktop;
+    width: $desktop-column-width;
   }
 }
 
@@ -136,11 +133,15 @@
     position: absolute;
     z-index: 1;
     top: 80px;
+  }
+
+  @include media-breakpoint-only(tablet) {
     right: $side-paddings-tablet;
     width: 175px;
   }
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(desktop) {
     right: $side-paddings-desktop;
+    width: $desktop-column-width;
   }
 }

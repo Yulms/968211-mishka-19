@@ -1,21 +1,35 @@
 .form-order {
-  padding-bottom: 36px;
-
   @include media-breakpoint-only(mobile) {
     padding-top: 22px;
+    padding-bottom: 56px;
   }
 
   @include media-breakpoint-only(tablet) {
     padding-top: 72px;
+    padding-bottom: 50px;
   }
 
   @include media-breakpoint-up(desktop) {
     padding-top: 120px;
+    padding-bottom: 50px;
   }
 }
 
-.form-order__wrapper-entry {
-  margin-bottom: 9px;
+.form-order__entry {
+  @include media-breakpoint-only(mobile) {
+    margin-bottom: 10px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    margin-bottom: 5px;
+  }
+}
+
+.form-order__entry-inner {
+  @include media-breakpoint-up(desktop) {
+    padding-left: $desktop-column-width;
+    padding-right: $desktop-column-width;
+  }
 }
 
 .form-order__entry-text {
@@ -29,17 +43,12 @@
     font-size: 17px;
     line-height: 30px;
   }
-
-  @include media-breakpoint-up(desktop) {
-    // padding-top: 30px;
-  }
-
 }
 
 .form-order__container {
   @include media-breakpoint-only(mobile) {
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 16px;
   }
 
   @include media-breakpoint-up(tablet) {
@@ -65,6 +74,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $color-primary;
+  word-break: break-word;
 
   @media (max-width: $mobile-only) {
     display: flex;
@@ -83,29 +93,63 @@
 }
 
 .form-order__title-positioner {
-
   @include media-breakpoint-only(mobile) {
     margin-bottom: 21px;
   }
 
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     position: absolute;
     top: 14px;
     left: 0;
+  }
+
+  @include media-breakpoint-only(tablet) {
     max-width: $tablet-column-width;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    width: $desktop-column-width;
+    text-align: center;
   }
 }
 
 .form-order__title-unflow {
+  @include media-breakpoint-only(mobile) {
+    margin-bottom: 8px;
+  }
+
   @media (min-width: $tablet) {
     position: absolute;
+  }
+
+  @include media-breakpoint-only(tablet) {
+    max-width: $tablet-column-width;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    width: $desktop-column-width;
+    text-align: center;
   }
 }
 
 .form-order__field-column {
-  @media (min-width: $tablet) {
+  @include media-breakpoint-up(tablet) {
     width: 100%;
+  }
+
+  @include media-breakpoint-only(tablet) {
     padding-left: $tablet-column-width;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    padding-left: $desktop-column-width;
+    padding-right: $desktop-column-width;
+  }
+}
+
+.form-order__field-column--wider {
+  @include media-breakpoint-up(desktop) {
+    padding-right: $desktop-column-width * 5 / 8;
   }
 }
 
@@ -116,7 +160,7 @@
   list-style: none;
 
   @media (max-width: $mobile-only) {
-    margin: -9px 0 0;
+    margin: -22px 0 0;
   }
 
   @media (min-width: $tablet) {
@@ -132,10 +176,9 @@
 }
 
 .form-order__item {
-  min-height: 52px;
 
   @media (max-width: $mobile-only) {
-    margin-top: 9px;
+    margin-top: 22px;
   }
 
   @media (min-width: $tablet) {
@@ -146,7 +189,7 @@
 
 .form-order__list--responsive .form-order__item {
   @media (min-width: $tablet) {
-    flex-basis: 33%;
+    flex-basis: 30%;
     flex-grow: 1;
   }
 }
@@ -163,36 +206,51 @@
   }
 }
 
-.form-order__text-input + .form-order__text-input {
-  margin-top: 16px;
-}
-
 .form-order__text-area {
-  @media (max-width: $mobile-only) {
-    margin-top: 23px;
+  display: flex;
+
+  @include media-breakpoint-down(tablet) {
+    height: 145px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    height: 140px;
   }
 }
 
-.form-order__footer {
+.form-order__footer-inner {
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  @include media-breakpoint-up(desktop) {
+    padding-left: $desktop-column-width;
+    padding-right: $desktop-column-width;
+  }
 }
 
 .form-order__footnote {
-  font-size: 14px;
-  line-height: 16px;
+  @include media-breakpoint-only(mobile) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form-order__button {
   @media (max-width: $mobile-only) {
     width: 100%;
-    margin-top: 31px;
+    margin-top: 23px;
   }
 
   @media (min-width: $tablet) {
     order: -1;
+    min-width: 230px;
   }
 }

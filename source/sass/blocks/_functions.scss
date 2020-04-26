@@ -16,12 +16,14 @@ $container-max-widths: (mobile: 320px, tablet: 768px, desktop: 1150px);
 
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
   $min: map-get($breakpoints, $name);
+
   @return if($min !=0, $min, null);
 }
 
 @function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
   $next: breakpoint-next($name, $breakpoints);
-  @return if($next, breakpoint-min($next, $breakpoints) - .02, null);
+
+  @return if($next, breakpoint-min($next, $breakpoints) - 0.02, null);
 }
 
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {

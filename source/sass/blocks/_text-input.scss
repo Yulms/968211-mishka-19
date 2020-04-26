@@ -7,8 +7,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 6px;
   opacity: 0.2;
+
+  @include media-breakpoint-only(mobile) {
+    right: 6px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    right: 24px;
+  }
 }
 
 .text-input__field {
@@ -23,12 +30,13 @@
   outline: 0;
 
   @include media-breakpoint-only(mobile) {
-    padding: 13px 18px 13px 0;
+    padding: 16px 18px 16px 0;
     font-size: 17px;
+    line-height: 18px;
   }
 
   @include media-breakpoint-up(tablet) {
-    padding: 14px 18px;
+    padding: 13px 18px;
     font-size: 19px;
   }
 }
@@ -52,6 +60,10 @@
 
   @include media-breakpoint-only(mobile) {
     padding: 14px 18px;
+  }
+
+  @include media-breakpoint-up(tablet) {
+    padding: 10px 14px;
   }
 }
 

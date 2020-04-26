@@ -127,9 +127,11 @@
     </div>
 
     <section class="form-order">
-      <div class="wrapper form-order__wrapper-entry">
-        <h2 class="visually-hidden">Форма заказа</h2>
-        <p class="form-order__entry-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <div class="form-order__entry wrapper">
+        <div class="form-order__entry-inner">
+          <h2 class="visually-hidden">Форма заказа</h2>
+          <p class="form-order__entry-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
       </div>
       <form class="form-order__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-order__container">
@@ -138,15 +140,19 @@
               <legend class="form-order__title form-order__title-positioner">Тип</legend>
               <div class="form-order__field-column">
                 <ul class="form-order__list">
-                  <li class="form-order__item radiocheck radiocheck--radio form-order__radiocheck">
-                    <input class="radiocheck__input" id="radio-1" type="radio" name="radio" value="1" checked>
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="radio-1">Аксессуар для интерьера</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="radio" name="radio" value="1" checked>
+                      <span class="radiocheck__box radiocheck__box--radio"></span>
+                      <span class="radiocheck__caption">Аксессуар для интерьера</span>
+                    </label>
                   </li>
-                  <li class="form-order__item radiocheck radiocheck--radio form-order__radiocheck">
-                    <input class="radiocheck__input" id="radio-2" type="radio" value="2" name="radio">
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="radio-2">Детская игрушка</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck radiocheck--radio">
+                      <input class="radiocheck__input" type="radio" name="radio" value="2" checked>
+                      <span class="radiocheck__box radiocheck__box--radio"></span>
+                      <span class="radiocheck__caption">Детская игрушка</span>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -158,38 +164,51 @@
           <div class="wrapper">
             <fieldset class="form-order__group">
               <legend class="form-order__title form-order__title-positioner">Цвет</legend>
-              <div class="form-order__field-column">
+              <div class="form-order__field-column form-order__field-column--wider">
                 <ul class="form-order__list form-order__list--responsive">
-                  <li class="form-order__item radiocheck radiocheck--check form-order__radiocheck">
-                    <input class="radiocheck__input" id="check-1" type="checkbox" name="Белый" checked>
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="check-1">Белый</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="checkbox" name="Белый" checked>
+                      <span class="radiocheck__box radiocheck__box--check"></span>
+                      <span class="radiocheck__caption">Белый</span>
+                    </label>
                   </li>
-                  <li class="form-order__item radiocheck radiocheck--check form-order__radiocheck">
-                    <input class="radiocheck__input" id="check-2" type="checkbox" name="Серый" checked>
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="check-2">Серый</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="checkbox" name="Серый" checked>
+                      <span class="radiocheck__box radiocheck__box--check"></span>
+                      <span class="radiocheck__caption">Серый</span>
+                    </label>
                   </li>
-                  <li class="form-order__item radiocheck radiocheck--check form-order__radiocheck">
-                    <input class="radiocheck__input" id="check-3" type="checkbox" name="«Тиффани»">
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="check-3">«Тиффани»</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="checkbox" name="«Тиффани»">
+                      <span class="radiocheck__box radiocheck__box--check"></span>
+                      <span class="radiocheck__caption">«Тиффани»</span>
+                    </label>
                   </li>
-                  <li class="form-order__item radiocheck radiocheck--check form-order__radiocheck">
-                    <input class="radiocheck__input" id="check-4" type="checkbox" name="Черный">
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="check-4">Черный</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="checkbox" name="Черный">
+                      <span class="radiocheck__box radiocheck__box--check"></span>
+                      <span class="radiocheck__caption">Черный</span>
+                    </label>
                   </li>
-                  <li class="form-order__item radiocheck radiocheck--check form-order__radiocheck">
-                    <input class="radiocheck__input" id="check-5" type="checkbox" name="Розовый">
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="check-5">Розовый</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="checkbox" name="Розовый">
+                      <span class="radiocheck__box radiocheck__box--check"></span>
+                      <span class="radiocheck__caption">Розовый</span>
+                    </label>
                   </li>
-                  <li class="form-order__item radiocheck radiocheck--check form-order__radiocheck">
-                    <input class="radiocheck__input" id="check-6" type="checkbox" name="Оранжевый">
-                    <span class="radiocheck__box"></span>
-                    <label class="radiocheck__label" for="check-6">Оранжевый</label>
+                  <li class="form-order__item">
+                    <label class="radiocheck">
+                      <input class="radiocheck__input" type="checkbox" name="Оранжевый">
+                      <span class="radiocheck__box radiocheck__box--check"></span>
+                      <span class="radiocheck__caption">Оранжевый</span>
+                    </label>
                   </li>
+
                 </ul>
               </div>
             </fieldset>
@@ -219,7 +238,6 @@
             </fieldset>
           </div>
         </div>
-
 
         <div class="form-order__container">
           <div class="wrapper">
@@ -269,17 +287,18 @@
               <div class="form-order__field-column">
                 <div class="text-input form-order__text-area">
                   <label class="visually-hidden text-input__label" for="extra-field">Дополнительная информация</label>
-                  <textarea class="text-input__field text-input__field--area" id="extra-field" name="user-extra" cols="30" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <textarea class="text-input__field text-input__field--area" id="extra-field" name="user-extra" cols="30" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-
         <div class="form-order__footer wrapper">
-          <small class="form-order__footnote">* Поля обязательны для заполнения</small>
-          <button class="button button--primary form-order__button">Отправить заказ</button>
+          <div class="form-order__footer-inner">
+            <small class="form-order__footnote">* Поля обязательны для заполнения</small>
+            <button class="button button--primary form-order__button">Отправить заказ</button>
+          </div>
         </div>
 
       </form>
@@ -293,7 +312,7 @@
 
       <!-- ссылку на логотипе на главной убрать позже -->
       <a class="logo footer__logo" href="index.html" title="">
-        <picture class="logo__container">
+        <picture>
           <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
         </picture>
       </a>

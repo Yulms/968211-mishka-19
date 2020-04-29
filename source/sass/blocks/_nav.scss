@@ -6,103 +6,21 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.nav__link {
-  position: relative;
-  display: block;
-  padding: 31px 16px 31px 76px;
-  font-size: 17px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none;
-  border-top: 1px solid $border-color;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0;
-    border: 0;
+    margin-left: -35px;
   }
 }
 
 .nav__item {
   @media (min-width: $tablet) {
     display: flex;
-  }
-}
-
-.nav--main .nav__list {
-  @media (min-width: $tablet) {
-    margin-left: -35px;
-  }
-}
-
-.nav--user .nav__list {
-  justify-content: flex-end;
-}
-
-.nav--main .nav__item {
-  @media (min-width: $tablet) {
     padding-left: 35px;
-    padding-right: 35px;
   }
-}
 
-.nav--main .nav__item:first-child {
   @media (min-width: $desktop) {
-    border-right: 1px solid $border-color;
+    padding-right: 35px;
+
+    &:first-child {
+      border-right: 1px solid $border-color;
+    }
   }
-}
-
-.nav__search-caption {
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.nav__link--search {
-  @media (min-width: $tablet) {
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
-  }
-}
-
-.nav__icon-container {
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 83px;
-  }
-}
-
-.nav__icon {
-  position: absolute;
-  left: 32px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.2;
-
-  @media (min-width: $tablet) {
-    position: static;
-    transform: none;
-    flex-shrink: 0;
-  }
-}
-
-.nav__link:hover .nav__icon,
-.nav__link:focus .nav__icon {
-  fill: $color-primary;
-  opacity: 1;
-}
-
-.nav__link:focus .nav__icon {
-  opacity: 0.3;
-}
-
-.nav__cart-caption {
-  white-space: pre;
 }

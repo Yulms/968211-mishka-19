@@ -1,0 +1,32 @@
+.footer {
+  background-color: #f1f1f1;
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 143px;
+  }
+}
+
+.footer__logo {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    flex-basis: $tablet-column-width;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: $desktop-column-width;
+  }
+}
+
+.footer__copyright {
+  @media (max-width: $mobile-only) {
+    border-top: 1px solid $border-color2;
+  }
+}

@@ -8,109 +8,145 @@
   <meta name="description" content="Магазин Мишка - лучшие поделки в подмосковье">
   <meta name="keywords" content="поделки">
   <link rel="stylesheet" href="css/style.css">
+
+
+
+  <!-- Pixel Glass -->
+  <!-- <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    @media (max-width: 767px) {
+      html {
+        background-position: 50% -316px;
+        background-image: url("mockups/index/mishka-index-mobile.png");
+      }
+    }
+
+    @media (min-width: 768px) {
+      html {
+        background-image: url("mockups/index/mishka-index-tablet.png");
+      }
+    }
+
+    @media (min-width: 1150px) {
+      html {
+        background-image: url("mockups/index/mishka-index-desktop.png");
+      }
+    }
+  </style>
+  <link href="mockups/pixel-glass/styles.css" rel="stylesheet">
+  <script src="mockups/pixel-glass/script.js"></script> -->
+  <!-- Pixel Glass -->
+
+
+
 </head>
 
-<body class="page">
-  <!-- класс page-header--closed убирать по нажатию на бургер -->
-  <header class="page-header page-header--index-page">
-    <div class="wrapper page-header__wrapper page-header__grid-container">
+<body>
+  <header class="header header--cute-stuff header--no-js">
+    <div class="wrapper header__wrapper">
 
-      <!-- ссылку на логотипе на главной убрать позже -->
-      <div class="page-header__logo">
-        <a class="logo" href="index.html" title="">
+      <div class="header__logo">
+        <a class="logo" href="/" title="">
           <picture class="logo__container">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image logo__image--header" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
           </picture>
         </a>
       </div>
 
-      <!-- page-header__toggle--active - класс для включения toggle -->
-      <button class="button page-header__toggle" type="button">
-        <svg class="page-header__burger-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
+      <button class="button header__toggle" type="button">
+        <svg class="header__burger-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/symbol/sprite.svg#icon-menu-open"></use>
         </svg>
-        <svg class="page-header__close-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
+        <svg class="header__close-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/symbol/sprite.svg#icon-menu-close"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <nav class="nav nav--main page-header__mobile-nav page-header__nav-main">
+      <nav class="nav header__mobile-nav header__nav-main">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html" title="">Каталог товаров</a>
+            <a class="header__link" href="catalog.html" title="">Каталог товаров</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html" title="">Вязание на заказ</a>
+            <a class="header__link" href="form.html" title="">Вязание на заказ</a>
           </li>
         </ul>
       </nav>
 
-      <div class="nav nav--user page-header__mobile-nav page-header__nav-user">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--search" href="#">
-              <div class="nav__icon-container">
-                <svg class="nav__icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
-                </svg>
-              </div>
-              <span class="nav__search-caption">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <div class="nav__icon-container">
-                <svg class="nav__icon" width="21" height="18" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
-                </svg>
-              </div>
-              <span class="nav__cart-caption">Корзина: </span>
-              <span class="nav__cart-quantity">пока пусто</span>
-              <!-- убрать aria-hidden после добавления товара в корзину -->
-              <span class="visually-hidden" aria-hidden="true">товар</span>
-            </a>
-          </li>
-        </ul>
+      <div class="header__mobile-nav header__user-controls">
+
+        <a class="header__link header__search" href="#">
+          <div class="header__icon-container">
+            <svg class="header__icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+            </svg>
+          </div>
+          <span class="header__search-caption">Поиск по сайту</span>
+        </a>
+
+        <a class="header__link" href="#">
+          <div class="header__icon-container">
+            <svg class="header__icon" width="21" height="18" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/symbol/sprite.svg#icon-cart"></use>
+            </svg>
+          </div>
+          <span class="header__cart-caption">Корзина: </span>
+          <span class="header__cart-quantity">пока пусто</span>
+          <!-- убрать aria-hidden после добавления товара в корзину -->
+          <span class="visually-hidden" aria-hidden="true">товар</span>
+        </a>
       </div>
 
-      <ul class="page-header__promo-list">
-        <li class="page-header__promo-item">
-          <a class="page-header__promo-link" href="#">Новые поступления</a>
+      <ul class="header__promo-list">
+        <li class="header__promo-item">
+          <a class="header__promo-link" href="#">Новые поступления</a>
         </li>
-        <li class="page-header__promo-item">
-          <a class="page-header__promo-link" href="#">Распродажа</a>
+        <li class="header__promo-item">
+          <a class="header__promo-link" href="#">Распродажа</a>
         </li>
       </ul>
 
-      <p class="page-header__offer-text">Бесплатная доставка по России</p>
+      <p class="header__offer-text">Бесплатная доставка по России</p>
 
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="main">
 
-    <div class="page-main__header page-main__header--index-page">
-      <h1 class="title title--1 page-main__title wrapper">Милые штуки ручной <br>работы для дома</h1>
+    <div class="main__header main__header--cute-stuff">
+      <div class="wrapper main__header-wrapper">
+        <h1 class="title title--1 main__title">Милые штуки ручной <br>работы для дома</h1>
+      </div>
     </div>
 
-    <section class="promo-catalog page-main__promo-catalog">
+    <section class="promo-catalog main__promo-catalog">
       <h2 class="visually-hidden">Популярные категории</h2>
       <ul class="promo-catalog__list">
         <li class="promo-catalog__item">
           <a class="promo-catalog__link" href="catalog.html" title="">
-            <span class="promo-catalog__inner promo-catalog__caption">Предметы интеръера</span>
-            <svg class="promo-catalog__inner promo-catalog__icon" width="60" height="62" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/symbol/sprite.svg#icon-interior"></use>
-            </svg>
+            <span class="promo-catalog__inner promo-catalog__caption">Предметы <br>интеръера</span>
+            <div class="promo-catalog__icon-container">
+              <svg class="promo-catalog__icon" width="40" height="62" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/symbol/sprite.svg#icon-interior"></use>
+              </svg>
+            </div>
           </a>
         </li>
-        <li class="promo-catalog__item">
+        <li class="promo-catalog__item promo-catalog__item--darker">
           <a class="promo-catalog__link" href="catalog.html" title="">
-            <span class="promo-catalog__inner promo-catalog__caption">Детские игрушки</span>
-            <svg class="promo-catalog__inner promo-catalog__icon" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/symbol/sprite.svg#icon-toy"></use>
-            </svg>
+            <span class="promo-catalog__inner promo-catalog__caption">Детские <br>игрушки</span>
+            <div class="promo-catalog__icon-container">
+              <svg class="promo-catalog__icon" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/symbol/sprite.svg#icon-toy"></use>
+              </svg>
+            </div>
           </a>
         </li>
       </ul>
@@ -118,48 +154,35 @@
 
     <article class="promo-product wrapper">
       <header class="promo-product__header">
-        <h2 class="title title--2 promo-product__title">Вязаные корзинки</h2>
+        <h2 class="promo-product__title">Вязаные корзинки</h2>
         <b class="promo-product__subtitle">Товар <br class="promo-product__subtitle-wrap">недели</b>
       </header>
 
       <picture class="image-container promo-product__image-container">
-        <img class="image-container__image" src="img/triple-set-desktop@1x.jpg" alt="Вязаная корзинка">
+        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+        <img class="image-container__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка">
       </picture>
 
       <div class="promo-product__inner">
 
         <p class="promo-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
 
-        <!-- <table class="table promo-product__features">
-          <caption class="visually-hidden">Характеристики</caption>
-          <tr class="table__row">
-            <td class="table__cell">Цвет:</td>
-            <td class="table__cell">«Тиффани»/серый</td>
-          </tr>
-          <tr class="table__row">
-            <td class="table__cell">Диаметр:</td>
-            <td class="table__cell">25 см</td>
-          </tr>
-          <tr class="table__row">
-            <td class="table__cell">Высота:</td>
-            <td class="table__cell">15 см</td>
-          </tr>
-        </table> -->
-
         <div class="promo-product__features">
           <h3 class="visually-hidden">Характеристики</h3>
-          <dl class="tabled-dl tabled-dl--border-bottom">
-            <div class="tabled-dl__row">
-              <dt class="tabled-dl__term">Цвет:</dt>
-              <dd class="tabled-dl__description">«Тиффани»/серый</dd>
+
+          <dl class="promo-product__list">
+            <div class="promo-product__list-row">
+              <dt class="promo-product__term">Цвет:</dt>
+              <dd class="promo-product__description">«Тиффани»/серый</dd>
             </div>
-            <div class="tabled-dl__row">
-              <dt class="tabled-dl__term">Диаметр:</dt>
-              <dd class="tabled-dl__description">25 см</dd>
+            <div class="promo-product__list-row">
+              <dt class="promo-product__term">Диаметр:</dt>
+              <dd class="promo-product__description">25 см</dd>
             </div>
-            <div class="tabled-dl__row">
-              <dt class="tabled-dl__term">Высота:</dt>
-              <dd class="tabled-dl__description">15 см</dd>
+            <div class="promo-product__list-row">
+              <dt class="promo-product__term">Высота:</dt>
+              <dd class="promo-product__description">15 см</dd>
             </div>
           </dl>
         </div>
@@ -171,9 +194,9 @@
       </div>
     </article>
 
-    <section class="advantages wrapper">
-      <div class="advantages__inner">.
-        <h2 class="title title--2 advantages__title">Коротко о нас</h2>
+    <section class="advantages main__advantages wrapper">
+      <div class="advantages__inner">
+        <h2 class="title title--2 advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--eco">
             <div class="advantages__icon-container">
@@ -181,7 +204,7 @@
                 <use xlink:href="img/symbol/sprite.svg#icon-feature-flower"></use>
               </svg>
             </div>
-            Экологически чистые материалы
+            Экологически чистые&nbsp;материалы
           </li>
           <li class="advantages__item advantages__item--style">
             <div class="advantages__icon-container">
@@ -189,7 +212,7 @@
                 <use xlink:href="img/symbol/sprite.svg#icon-feature-money"></use>
               </svg>
             </div>
-            Скандинавский стиль по российской цене
+            Скандинавский стиль по&nbsp;российской цене
           </li>
           <li class="advantages__item  advantages__item--like">
             <div class="advantages__icon-container">
@@ -197,7 +220,7 @@
                 <use xlink:href="img/symbol/sprite.svg#icon-feature-heart"></use>
               </svg>
             </div>
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки на&nbsp;фотографиях
           </li>
           <li class="advantages__item advantages__item--love">
             <div class="advantages__icon-container">
@@ -205,7 +228,7 @@
                 <use xlink:href="img/symbol/sprite.svg#icon-feature-ball"></use>
               </svg>
             </div>
-            Связано вручную с любовью и умилением
+            Связано вручную с любовью&nbsp;и&nbsp;умилением
           </li>
           <li class="advantages__item advantages__item--homeland">
             <div class="advantages__icon-container">
@@ -213,7 +236,7 @@
                 <use xlink:href="img/symbol/sprite.svg#icon-feature-rocket"></use>
               </svg>
             </div>
-            Поддержка отечественного производителя
+            <span>Поддержка отечественного производителя</span>
           </li>
           <li class="advantages__item advantages__item--gift">
             <div class="advantages__icon-container">
@@ -221,66 +244,91 @@
                 <use xlink:href="img/symbol/sprite.svg#icon-feature-gift"></use>
               </svg>
             </div>
-            Поставляется в подарочной упаковке
+            Поставляется в подарочной&nbsp;упаковке
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="reviews wrapper">
-      <h2 class="title title--2 reviews__title">Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <blockquote class="reviews__one-review">
-            <p class="reviews__review-text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <cite class="reviews__author">
-              <span class="reviews__name">Анастасия Красильникова</span>
-              <span class="reviews__login">@missssssiskras</span>
-            </cite>
-          </blockquote>
-        </li>
-      </ul>
-      <div class="reviews__button-container">
-        <button class="button button--arrow button--arrow-left reviews__button--arrow" type="button">
-          <svg class="button__icon--arrow" width="50" height="26" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/symbol/sprite.svg#icon-left-arrow"></use>
-          </svg>
-          <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="button button--arrow button--arrow-right reviews__button--arrow" type="button">
-          <svg class="button__icon--arrow" width="50" height="26" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/symbol/sprite.svg#icon-right-arrow"></use>
-          </svg>
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
+    <section class="reviews wrapper main__reviews">
+      <div class="reviews__inner">
+        <h2 class="title title--2 reviews__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <blockquote class="reviews__one-review">
+              <p class="reviews__review-text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">Анастасия Красильникова</span>
+                <br>
+                <span class="reviews__login">@missssssiskras</span>
+              </cite>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="reviews__button-container">
+          <button class="button button--arrow button--arrow-left reviews__button--arrow" type="button">
+            <svg class="button__icon--arrow" width="50" height="26" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/symbol/sprite.svg#icon-left-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="button button--arrow button--arrow-right reviews__button--arrow" type="button">
+            <svg class="button__icon--arrow" width="50" height="26" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/symbol/sprite.svg#icon-right-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
+        <button class="button button--primary reviews__button" type="button">Написать</button>
       </div>
-      <button class="button button--primary reviews__button" type="button">Написать</button>
     </section>
 
-    <section class="contacts wrapper">
-      <h2 class="title title--3 contacts__title">Контакты</h2>
-      <dl class="contacts__list">
-        <dt class="contacts__key">email:</dt>
-        <dd class="contacts__value"><a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-        <dt class="contacts__key">адрес:</dt>
-        <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
-      </dl>
-      <p class="contacts__map">
-        <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1583135811749!5m2!1sru!2sby" height="460" allowfullscreen></iframe>
-        <img class="contacts__map-image" src="img/extra-map.png" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-      </p>
-      <button class="button button--primary contacts__button" type="button">Напишите нам</button>
+    <section class="contacts main__contacts">
+      <div class="contacts__main">
+
+        <div class="contacts__header">
+          <h2 class="contacts__title">Контакты</h2>
+          <svg class="contacts__header-icon " width=" 47" height="81" viewBox="-11.3 -28.3 46.7 81.7">
+            <path fill="#63D1BB" d="M-3.6-24.5v39L35.4-5l-39-19.5zm-7.7 77.8v-81.6h3.8v81.6h-3.8z" />
+            <path fill="#231F20" d="M-11.3-28.3h3.8v81.7h-3.8z" />
+          </svg>
+        </div>
+
+        <ul class="contacts__list">
+          <li class="contacts__list-row">
+            <span class="contacts__term">e-mail:</span>
+            <span class="contacts__description"><a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+          </li>
+          <li class="contacts__list-row">
+            <span class="contacts__term">адрес:</span>
+            <span class="contacts__description">г. Санкт-Петербург, <br>ул. Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</span>
+          </li>
+        </ul>
+
+        <button class="button button--primary contacts__button" type="button">Напишите нам</button>
+
+      </div>
+
+      <div class="contacts__map">
+        <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1583135811749!5m2!1sru!2sby" height="457" allowfullscreen></iframe>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </picture>
+      </div>
+
     </section>
 
   </main>
 
-  <footer class="page-footer">
-    <div class="wrapper page-footer__wrapper">
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
 
       <!-- ссылку на логотипе на главной убрать позже -->
-      <a class="logo page-footer__logo" href="index.html" title="">
+      <a class="logo footer__logo" href="index.html" title="">
         <picture class="logo__container">
           <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
         </picture>
@@ -313,7 +361,7 @@
         </li>
       </ul>
 
-      <div class="copyright page-footer__copyright">
+      <div class="copyright footer__copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__creator-icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg">

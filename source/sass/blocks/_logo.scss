@@ -1,9 +1,19 @@
-.logo {
+.logo__image {
   display: block;
 }
 
-.logo__image {
-  display: block;
+.logo__image--header {
+  @media (max-width: $mobile-only) {
+    width: 86px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    width: 112px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 149px;
+  }
 }
 
 .logo:hover,

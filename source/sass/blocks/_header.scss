@@ -1,0 +1,265 @@
+.header {
+  @media (max-width: $mobile-only) {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $tablet) {
+    background-color: #f1f1f1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #dfdfdf;
+      height: 89px;
+    }
+  }
+}
+
+.header--cute-stuff {
+  @media (min-width: $tablet) {
+    background-color: #f9f9f9;
+  }
+}
+
+.header__wrapper {
+  position: relative;
+
+  @media (max-width: $mobile-only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-only) {
+    min-height: 79px;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 88px;
+  }
+
+  @media (min-width: $desktop) {
+    order: 1;
+  }
+}
+
+.header__toggle {
+  @media (max-width: $mobile-only) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 79px;
+    height: 79px;
+    padding: 29px;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header--no-js .header__toggle {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}
+
+.header__nav-main {
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    order: 1;
+    position: relative;
+    flex-basis: 60%;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-basis: 40%;
+  }
+}
+
+.header__user-controls {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+    flex-basis: 40%;
+  }
+}
+
+.header__link {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+
+  @media (max-width: $mobile-only) {
+    position: relative;
+    display: block;
+    padding: 27px 16px 27px 76px;
+    border-top: 1px solid $border-color;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88px;
+    padding: 25px 0;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $tablet-only) {
+  .header__nav-main .header__link {
+    min-height: auto;
+    padding: 18px 0;
+    font-size: 15px;
+  }
+}
+
+.header__search {
+  @media (min-width: $tablet) {
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+}
+
+.header__search-caption {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__icon-container {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 83px;
+  }
+}
+
+.header__icon {
+  opacity: 0.2;
+
+  @media (max-width: $mobile-only) {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet) {
+    flex-shrink: 0;
+  }
+}
+
+.header__link:hover .header__icon,
+.header__link:focus .header__icon {
+  fill: $color-primary;
+  opacity: 1;
+}
+
+.header__link:focus .header__icon {
+  opacity: 0.3;
+}
+
+.header__toggle--active .header__burger-icon {
+  display: none;
+}
+
+.header__toggle--active .header__close-icon {
+  display: block;
+}
+
+.header__close-icon {
+  display: none;
+}
+
+@media (max-width: $mobile-only) {
+  .header--closed .header__mobile-nav {
+    display: none;
+  }
+}
+
+.header__offer-text {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    position: relative;
+    max-width: 40%;
+    margin: 0;
+    padding: 18px 0;
+    font-size: 15px;
+    text-align: right;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop) {
+    order: 4;
+  }
+}
+
+.header__promo-list {
+  @media (max-width: $tablet-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.header__promo-item {
+  @media (min-width: $desktop) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+}
+
+.header__promo-link {
+  @media (min-width: $desktop) {
+    padding: 18px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+.header__cart-caption {
+  white-space: pre;
+}

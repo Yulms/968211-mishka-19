@@ -2,26 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
+
+  @media (max-width: $mobile-only) {
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
 }
 
 .copyright__text {
+  margin-right: 30px;
   font-size: 19px;
   font-weight: 700;
 }
 
-.copyright__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright__text + .copyright__link {
-  margin-left: 30px;
-}
-
 .copyright__creator-icon {
+  display: block;
   fill: $color-primary;
 }
 

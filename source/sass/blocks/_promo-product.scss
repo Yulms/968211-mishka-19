@@ -108,15 +108,16 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    flex-basis: $tablet-column-width * 2;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
+    flex-basis: $tablet-column-width * 2;
     flex-grow: 1;
     padding-right: 44px;
   }
 
   @media (min-width: $desktop) {
+    flex-basis: calc(100% - 525px);
     padding-left: $desktop-column-width;
     padding-right: 58px;
   }
@@ -180,6 +181,7 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 525px;
     margin-top: -160px;
   }
 }

@@ -171,13 +171,13 @@
   }
 }
 
-.contacts__list-row + .contacts__list-row {
+.contacts__list-row:not(:last-child) {
   @media (max-width: $mobile-only) {
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 

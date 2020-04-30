@@ -5,10 +5,14 @@
   }
 
   @media (min-width: $tablet) {
-    position: relative;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
@@ -24,6 +28,10 @@
 }
 
 .reviews__inner {
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+
   @media (min-width: $desktop) {
     padding-left: $desktop-column-width;
   }
@@ -104,14 +112,15 @@
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    bottom: 50px;
-    right: $side-paddings-tablet;
     width: 175px;
   }
 
+  @media (min-width: $tablet) {
+    bottom: 6px;
+    right: 0;
+  }
+
   @media (min-width: $desktop) {
-    bottom: 100px;
-    right: $side-paddings-desktop;
     width: $desktop-column-width;
   }
 }
@@ -132,16 +141,16 @@
   @media (min-width: $tablet) {
     position: absolute;
     z-index: 1;
-    top: 80px;
+    right: 0;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    right: $side-paddings-tablet;
+    top: 0;
     width: 175px;
   }
 
   @media (min-width: $desktop) {
-    right: $side-paddings-desktop;
+    top: 8px;
     width: $desktop-column-width;
   }
 }

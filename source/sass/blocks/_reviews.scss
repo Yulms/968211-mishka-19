@@ -63,10 +63,15 @@
 
   @media (max-width: $mobile-only) {
     margin: 0 0 27px 0;
+    font-size: 15px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     margin: 0 0 58px 0;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
   }
 
   @media (min-width: $desktop) {

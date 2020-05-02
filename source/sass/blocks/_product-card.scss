@@ -39,11 +39,11 @@
 }
 
 .product-card__info-inner {
-  @media (max-width: @tablet-only) {
+  @media (max-width: $tablet-only) {
     margin-bottom: 19px;
   }
 
-  @media (min-width: @desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 14px;
   }
 }

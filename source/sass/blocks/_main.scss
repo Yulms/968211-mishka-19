@@ -8,11 +8,13 @@
 
   @media (max-width: $mobile-only) {
     min-height: 176px;
+    margin-bottom: 30px;
     padding-top: 70px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     min-height: 166px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $tablet) {
@@ -22,6 +24,7 @@
 
   @media (min-width: $desktop) {
     min-height: 196px;
+    margin-bottom: 127px;
   }
 
   &::before {
@@ -130,11 +133,15 @@
 }
 
 .main__products {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 31px;
+  }
+
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    margin-bottom: 23px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 27px;
+    margin-bottom: 4px;
   }
 }

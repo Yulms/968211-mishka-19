@@ -53,6 +53,7 @@
 }
 
 .main__header--cute-stuff {
+  margin-bottom: 0;
   background-color: #f9f9f9;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -100,6 +101,20 @@
   }
 }
 
+.main__header--form {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 120px;
+  }
+}
+
 .main__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -109,20 +124,61 @@
 .main__promo-catalog {
   @media (max-width: $mobile-only) {
     margin-top: -73px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-bottom: 45px;
   }
 
   @media (min-width: $tablet) {
     margin-top: -119px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 71px;
+  }
 }
 
-.main__advantages {
+.main__promo-product {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 36px;
+  }
+
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    margin-bottom: 50px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 75px;
+  }
+}
+
+.main__video {
+  @media (max-width: $mobile-only) {
     margin-bottom: 57px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 105px;
+  }
+}
+
+.main__advantages {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 89px;
   }
 }
 
@@ -143,5 +199,19 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 4px;
+  }
+}
+
+.main__contacts {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 161px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    // margin-bottom: 246px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 105px;
   }
 }

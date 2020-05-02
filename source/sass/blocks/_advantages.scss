@@ -1,18 +1,15 @@
 .advantages {
   @media (max-width: $mobile-only) {
     padding-top: 33px;
-    padding-bottom: 32px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     padding-top: 65px;
-    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
     padding-top: 81px;
-    padding-bottom: 32px;
   }
 
   &::before {

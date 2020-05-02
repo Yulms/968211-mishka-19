@@ -3,7 +3,7 @@
 
   @media (max-width: $mobile-only) {
     padding-top: 40px;
-    padding-bottom: 128px;
+    padding-bottom: 129px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
@@ -16,7 +16,7 @@
     max-width: $desktop-max-width;
     margin-left: auto;
     margin-right: auto;
-    padding: 93px $side-paddings-desktop 105px;
+    padding: 93px $side-paddings-desktop 0;
   }
 
   &::before {

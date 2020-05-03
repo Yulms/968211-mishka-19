@@ -1,16 +1,13 @@
 .form-order {
   @media (max-width: $mobile-only) {
-    padding-top: 22px;
     padding-bottom: 56px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    padding-top: 72px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 120px;
     padding-bottom: 50px;
   }
 }

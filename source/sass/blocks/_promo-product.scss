@@ -3,8 +3,7 @@
 
   @media (max-width: $mobile-only) {
     flex-direction: column;
-    padding-top: 27px;
-    padding-bottom: 36px;
+    // padding-bottom: 36px;
   }
 
   @media (min-width: $tablet) {
@@ -12,14 +11,12 @@
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    padding-top: 45px;
-    padding-bottom: 59px;
+    // padding-bottom: 59px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
-    padding-top: 71px;
-    padding-bottom: 75px;
+    // padding-bottom: 75px;
   }
 }
 

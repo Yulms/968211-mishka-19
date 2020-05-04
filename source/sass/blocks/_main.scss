@@ -198,13 +198,13 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 }
 
 .main__contacts {
   @media (max-width: $mobile-only) {
-    margin-bottom: 161px;
+    // margin-bottom: 161px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {

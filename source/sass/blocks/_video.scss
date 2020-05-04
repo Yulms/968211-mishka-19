@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop) {
     position: relative;
-    padding: 46px 57px 60px 760px;
+    padding: 46px 57px 59px 760px;
   }
 }
 
@@ -30,18 +30,20 @@
   position: relative;
 
   @media (max-width: $mobile-only) {
-    margin: 0 -33px 28px;
+    margin: 0 -34px 26px;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     order: -1;
-    margin: 0 -41px 39px;
+    margin: 0 -42px 37px;
+    border-bottom: 1px solid $border-color;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
     width: 682px;
   }
 }

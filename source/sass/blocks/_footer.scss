@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    flex-basis: $tablet-column-width;
+    flex-basis: $tablet-column-width + 1%;
   }
 
   @media (min-width: $desktop) {

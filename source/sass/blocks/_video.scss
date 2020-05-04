@@ -27,10 +27,12 @@
 }
 
 .video__image-container {
-  position: relative;
-
   @media (max-width: $mobile-only) {
     margin: 0 -34px 26px;
+  }
+
+  @media (max-width: $tablet-only) {
+    position: relative;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
@@ -46,6 +48,10 @@
     bottom: -1px;
     width: 682px;
   }
+}
+
+.video__image {
+  display: block;
 }
 
 .video__button-play {

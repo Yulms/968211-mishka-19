@@ -32,6 +32,10 @@
   }
 }
 
+.product-card__image {
+  display: block;
+}
+
 .product-card__info {
   display: flex;
   flex-direction: column;

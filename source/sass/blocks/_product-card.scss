@@ -11,16 +11,18 @@
   }
 }
 
-.product-card:hover,
-.product-card:focus-within {
+.product-card:hover .product-card__info,
+.product-card:focus-within .product-card__info {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.product-card:active {
+.product-card:active .product-card__info {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product-card__image-link {
+  outline: none;
+
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     flex-shrink: 0;
   }
@@ -30,21 +32,42 @@
   }
 }
 
+.product-card__image {
+  display: block;
+}
+
 .product-card__info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 26px 26px 27px;
   border: 1px solid $border-color;
+
+  @media (max-width: $mobile-only) {
+    padding: 26px 26px 17px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 26px 26px 15px;
+  }
 }
 
 .product-card__info-inner {
-  @media (max-width: $tablet-only) {
-    margin-bottom: 19px;
+  flex-grow: 1;
+  border-bottom: 1px solid $border-color;
+
+  @media (max-width: $mobile-only) {
+    margin-bottom: 8px;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-bottom: 9px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 13px;
   }
 }
 
@@ -59,6 +82,7 @@
   margin: 0;
   font-weight: 700;
   color: #000000;
+  word-break: break-word;
 
   @media (max-width: $mobile-only) {
     font-size: 17px;
@@ -71,6 +95,7 @@
 
 .product-card__features {
   line-height: 30px;
+  word-break: break-word;
 
   @media (max-width: $mobile-only) {
     font-size: 13px;
@@ -82,12 +107,10 @@
 
   @media (max-width: $tablet-only) {
     margin: 0;
-    // margin: 0 0 19px 0;
   }
 
   @media (min-width: $desktop) {
     margin: 0;
-    // margin: 0 0 14px 0;
   }
 }
 
@@ -95,13 +118,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto 0 0;
-  padding-top: 21px;
-  border-top: 1px solid $border-color;
+  margin: 0;
+
+  @media (max-width: $mobile-only) {
+    margin-right: -14px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: -8px;
+  }
 }
 
 .product-card__price {
   color: #000000;
+  word-break: break-word;
 
   @media (max-width: $mobile-only) {
     font-size: 15px;
@@ -113,9 +143,7 @@
 }
 
 .product-card__button {
-  position: absolute;
-  right: 0;
-  padding: 20px 30px;
+  padding: 14px;
   outline: none;
 }
 

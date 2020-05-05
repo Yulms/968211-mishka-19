@@ -138,21 +138,20 @@
 }
 
 .contacts__list {
+  margin: 0;
   padding: 0;
   list-style: none;
   line-height: 30px;
 
   @media (max-width: $mobile-only) {
+    margin-bottom: 533px;
     font-size: 15px;
-  }
-
-  @media (max-width: $tablet-only) {
-    margin: 0;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 569px;
   }
 
   @media (min-width: $tablet) {
@@ -166,6 +165,7 @@
 
 .contacts__list-row {
   display: flex;
+  word-break: break-word;
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
     width: 50%;
@@ -194,6 +194,15 @@
   justify-content: center;
   height: 457px;
   overflow: hidden;
+
+  @media (max-width: $mobile-only) {
+    // размер margin-bottom .contacts__list + высота кнопки
+    margin-top: calc(-533px - 52px);
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-top: calc(-569px - 52px);
+  }
 
   @media (min-width: $desktop) {
     width: $desktop-column-width * 3;
@@ -245,21 +254,14 @@
 }
 
 .contacts__button {
-  @media (max-width: $tablet-only) {
-    // position: absolute;
-    // z-index: 1;
-    // left: 50%;
-    // transform: translateX(-50%);
-  }
-
   @media (max-width: $mobile-only) {
-    // bottom: 39px;
-    width: calc(100% - #{$side-paddings-mobile * 2});
-    max-width: $mobile-max-width;
+    width: 100%;
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    bottom: 57px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $tablet) {

@@ -99,9 +99,9 @@
   }
 }
 
-.advantages__item + .advantages__item {
+.advantages__item:not(:last-child) {
   @media (max-width: $mobile-only) {
-    margin-top: 26px;
+    margin-bottom: 26px;
   }
 }
 
@@ -116,8 +116,38 @@
 
 
 .advantages__icon {
+  position: relative;
   display: block;
   fill: $color-primary;
+}
+
+.advantages__item--eco .advantages__icon {
+  left: -3px;
+  top: 2px;
+}
+
+.advantages__item--style .advantages__icon {
+  left: -3px;
+  top: -6px;
+}
+
+.advantages__item--like .advantages__icon {
+  left: -3px;
+  top: -1px;
+}
+
+.advantages__item--love .advantages__icon {
+  left: -7px;
+  top: 3px;
+}
+
+.advantages__item--homeland .advantages__icon {
+  left: -6px;
+  top: -7px;
+}
+
+.advantages__item--gift .advantages__icon {
+  left: -8px;
 }
 
 @media (min-width: $tablet) {

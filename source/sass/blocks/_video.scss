@@ -1,5 +1,6 @@
 .video__inner {
   border: 1px solid $border-color;
+  word-break: break-word;
 
   @media (max-width: $mobile-only) {
     padding: 22px 33px 32px;
@@ -45,7 +46,6 @@
     position: absolute;
     left: -1px;
     top: -1px;
-    bottom: -1px;
     width: 682px;
   }
 }

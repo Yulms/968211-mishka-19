@@ -90,6 +90,11 @@
 .reviews__author {
   display: block;
   font-style: normal;
+  word-break: break-word;
+
+  @media (min-width: $tablet) {
+    max-width: 70%;
+  }
 }
 
 .reviews__name {

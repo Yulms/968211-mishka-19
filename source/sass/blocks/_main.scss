@@ -1,5 +1,7 @@
 .main {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__header {

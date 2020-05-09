@@ -1,4 +1,6 @@
 .footer {
+  // workaround for ie min-height bug
+  display: flex;
   background-color: #f1f1f1;
 }
 
@@ -7,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     min-height: 143px;
   }
 }

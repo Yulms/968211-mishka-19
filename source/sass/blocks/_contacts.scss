@@ -1,4 +1,4 @@
-.contacts {
+.contacts__inner {
   position: relative;
 
   @media (max-width: $mobile-only) {
@@ -13,7 +13,6 @@
 
   @media (min-width: $desktop) {
     display: flex;
-    width: 100%;
     max-width: $desktop-max-width;
     margin-left: auto;
     margin-right: auto;

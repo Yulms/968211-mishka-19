@@ -5,6 +5,9 @@
 }
 
 .main__header {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
   padding-bottom: 30px;
   background-color: #f1f1f1;
 
@@ -55,9 +58,6 @@
 }
 
 .main__header--cute-stuff {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-bottom: 0;
   background-color: #f9f9f9;
   background-position: center bottom;
@@ -112,6 +112,7 @@
 
 .main__header-wrapper {
   margin-bottom: 40px;
+  align-self: center;
 }
 
 .main__header--form {
@@ -132,6 +133,10 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+}
+
+.main__promo-catalog {
+  margin-top: auto;
 }
 
 .main__promo-product {
@@ -197,14 +202,6 @@
 }
 
 .main__contacts {
-  @media (max-width: $mobile-only) {
-    // margin-bottom: 161px;
-  }
-
-  @media (min-width: $tablet) and (max-width: $tablet-only) {
-    // margin-bottom: 246px;
-  }
-
   @media (min-width: $desktop) {
     margin-bottom: 105px;
   }

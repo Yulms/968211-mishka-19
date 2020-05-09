@@ -1,4 +1,4 @@
-.reviews {
+.reviews__wrapper {
   @media (max-width: $mobile-only) {
     padding-top: 21px;
     padding-bottom: 46px;
@@ -29,7 +29,6 @@
 
 .reviews__inner {
   @media (min-width: $tablet) {
-    // position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

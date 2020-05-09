@@ -1,4 +1,5 @@
-.promo-product {
+.promo-product__wrapper {
+  // ie11 workaround flexbug with min-height
   display: flex;
   flex-direction: column;
 }

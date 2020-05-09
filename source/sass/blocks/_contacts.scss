@@ -112,6 +112,7 @@
 
   @media (min-width: $desktop) {
     position: absolute;
+    top: 62px;
     left: $desktop-column-width;
     transform: translateX(-50%);
   }

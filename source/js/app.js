@@ -13,7 +13,7 @@ buttonToggle.addEventListener("click", function (evt) {
 
 
 let modalCart = document.querySelector(".modal--cart");
-var buttonsCartAdd = document.querySelectorAll(".product-card__button");
+var buttonsCartAdd = document.querySelectorAll(".js-add2cart");
 
 for (var i = 0; i < buttonsCartAdd.length; i++) {
   buttonsCartAdd[i].addEventListener("click", function (evt) {

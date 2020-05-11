@@ -13,9 +13,10 @@ buttonToggle.addEventListener("click", function (evt) {
 
 
 let modalCart = document.querySelector(".modal--cart");
-const buttonsCartAdd = document.querySelectorAll(".product-card__button");
-for (let buttonCartAdd of buttonsCartAdd) {
-  buttonCartAdd.addEventListener("click", function (evt) {
+var buttonsCartAdd = document.querySelectorAll(".product-card__button");
+
+for (var i = 0; i < buttonsCartAdd.length; i++) {
+  buttonsCartAdd[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     modalCart.classList.remove("modal--closed");
   });

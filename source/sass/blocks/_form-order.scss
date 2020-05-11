@@ -101,11 +101,11 @@
   }
 
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    flex-basis: $tablet-column-width;
+    width: $tablet-column-width;
   }
 
   @media (min-width: $desktop) {
-    flex-basis: $desktop-column-width;
+    width: $desktop-column-width;
     padding-left: 64px;
   }
 }
@@ -168,18 +168,21 @@
   }
 
   @media (min-width: $tablet) {
-    margin-right: 24px;
     margin-bottom: 24px;
   }
 }
 
 .form-order__list--responsive .form-order__item {
   @media (min-width: $tablet) and (max-width: $tablet-only) {
-    flex-basis: calc((100% /2) - 24px);
+    // дробный пиксель для предотвращения переноса
+    // в ie11 (округление вверх)
+    flex-basis: calc((100% /2) - 24.1px);
+    margin-right: 24px;
   }
 
   @media (min-width: $desktop) {
-    flex-basis: calc((100% /3) - 24px);
+    flex-basis: calc((100% /3) - 24.1px);
+    margin-right: 24px;
   }
 }
 

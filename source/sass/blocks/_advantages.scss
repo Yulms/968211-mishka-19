@@ -8,8 +8,13 @@
   }
 
   @media (min-width: $desktop) {
-    position: relative;
     padding-top: 81px;
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: $desktop) {
+    position: relative;
   }
 
   &::before {

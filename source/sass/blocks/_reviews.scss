@@ -1,17 +1,21 @@
-.reviews {
+.reviews__wrapper {
   @media (max-width: $mobile-only) {
     padding-top: 21px;
     padding-bottom: 46px;
   }
 
   @media (min-width: $tablet) {
-    background-image: url("../../img/review@1x.jpg");
+    background-image:
+      url("../../img/review@1x.jpg"),
+      linear-gradient(to right, #f7f7f7 350px, transparent 350px);
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image:
+        url("../../img/review@2x.jpg"),
+        linear-gradient(to right, #f7f7f7 350px, transparent 350px);
     }
   }
 
@@ -29,7 +33,6 @@
 
 .reviews__inner {
   @media (min-width: $tablet) {
-    // position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

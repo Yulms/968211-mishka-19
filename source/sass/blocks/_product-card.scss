@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop) {
     flex-direction: column;
+    // ie11
+    width: 100%;
   }
 }
 
@@ -48,6 +50,10 @@
 
   @media (min-width: $tablet) {
     padding: 26px 26px 15px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    width: $tablet-column-width * 2;
   }
 }
 

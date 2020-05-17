@@ -94,7 +94,7 @@ if (document.querySelector("#map")) {
         hintContent: "г. Санкт-Петербург, <br>ул. Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101"
       }, {
         iconLayout: "default#image",
-        iconImageHref: "../img/map-pin.svg",
+        iconImageHref: "img/map-pin.svg",
         iconImageSize: [67, 100],
         iconImageOffset: [-33, -100]
       });

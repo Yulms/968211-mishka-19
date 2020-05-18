@@ -14,7 +14,8 @@
 
   @media (min-width: $desktop) {
     position: relative;
-    padding: 46px 57px 59px 760px;
+    min-height: 455px;
+    padding: 46px 57px 46px 760px;
   }
 }
 
@@ -52,6 +53,17 @@
 
 .video__image {
   display: block;
+  max-height: 100%;
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 682px;
+    height: 100%;
+  }
 }
 
 .video__button-play {

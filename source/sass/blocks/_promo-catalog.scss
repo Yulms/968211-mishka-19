@@ -23,7 +23,6 @@
 
 .promo-catalog__item {
   display: block;
-  transition: 0.15s;
 
   @media (min-width: $tablet) {
     flex-basis: 300px;
@@ -43,6 +42,7 @@
   text-decoration: none;
   background-color: $color-primary;
   outline: none;
+  transition: 0.15s;
 
   @media (max-width: $mobile-only) {
     padding: 20px calc(((100% - #{$mobile-max-width}) / 2) + #{$side-paddings-mobile});

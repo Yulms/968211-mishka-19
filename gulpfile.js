@@ -17,7 +17,7 @@ var webp = require("gulp-webp");
 var posthtml = require("gulp-posthtml");
 var htmlmin = require("gulp-htmlmin");
 var concat = require("gulp-concat");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
 var server = require("browser-sync").create();
 
 
@@ -132,7 +132,7 @@ gulp.task("svgsprite", function () {
       mode: {
         symbol: {
           sprite: "sprite.svg",
-          dest: '.'
+          dest: "."
         }
       }
     }))
@@ -173,7 +173,7 @@ gulp.task("js", function () {
     .pipe(concat("all.js"))
     .pipe(uglify())
     .pipe(rename("all.min.js"))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest("build/js"));
 })
 
 // служебная задача - перезагрузка сервера

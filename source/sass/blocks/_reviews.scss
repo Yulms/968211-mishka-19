@@ -11,11 +11,23 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @supports (background-image: url("../img/review@1x.webp")) {
+      background-image:
+        url("../img/review@1x.webp"),
+        linear-gradient(to right, #f7f7f7 350px, transparent 350px);
+    }
+
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image:
         url("../img/review@2x.jpg"),
         linear-gradient(to right, #f7f7f7 350px, transparent 350px);
+
+      @supports (background-image: url("../img/review@2x.webp")) {
+        background-image:
+          url("../img/review@2x.webp"),
+          linear-gradient(to right, #f7f7f7 350px, transparent 350px);
+      }
     }
   }
 

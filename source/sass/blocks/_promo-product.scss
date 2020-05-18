@@ -161,6 +161,20 @@
 
 .promo-product__image {
   display: block;
+
+  @media (max-width: $mobile-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet) and (max-width: $tablet-only) {
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .promo-product__price {

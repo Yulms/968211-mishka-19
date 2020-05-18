@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet) {
     background-image:
-      url("../../img/review@1x.jpg"),
+      url("../img/review@1x.jpg"),
       linear-gradient(to right, #f7f7f7 350px, transparent 350px);
     background-repeat: no-repeat;
     background-size: contain;
@@ -14,7 +14,7 @@
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image:
-        url("../../img/review@2x.jpg"),
+        url("../img/review@2x.jpg"),
         linear-gradient(to right, #f7f7f7 350px, transparent 350px);
     }
   }

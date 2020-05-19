@@ -37,7 +37,6 @@
   text-decoration: none;
   background-color: $color-primary;
   outline: none;
-  transition: 0.15s;
 
   @media (max-width: $mobile-only) {
     font-size: 19px;
@@ -60,6 +59,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 103px;
+  transition: 0.15s;
 
   @media (max-width: $mobile-only) {
     max-width: $mobile-max-width;

@@ -67,17 +67,17 @@
   }
 }
 
-.button__icon--arrow {
+.button__icon {
   display: block;
   margin: 0 auto;
 }
 
-.button--arrow:hover:not(:disabled) .button__icon--arrow,
-.button--arrow:focus:not(:disabled) .button__icon--arrow {
+.button--arrow:hover:not(:disabled) .button__icon,
+.button--arrow:focus:not(:disabled) .button__icon {
   opacity: 0.6;
 }
 
-.button--arrow:active .button__icon--arrow {
+.button--arrow:active .button__icon {
   opacity: 0.3;
 }
 

@@ -34,6 +34,10 @@
   }
 }
 
+.product-card__image-link:active {
+  opacity: 0.6;
+}
+
 .product-card__image {
   display: block;
   width: 100%;
@@ -98,6 +102,15 @@
   @media (min-width: $tablet) {
     font-size: 20px;
   }
+}
+
+.product-card__link:hover .product-card__title,
+.product-card__link:focus .product-card__title {
+  opacity: 0.6;
+}
+
+.product-card__link:active .product-card__title {
+  opacity: 0.3;
 }
 
 .product-card__features {

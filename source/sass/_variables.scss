@@ -18,13 +18,13 @@ $mobile-column-width: 100% / $mobile-column-count;
 $tablet-column-width: 100% / $tablet-column-count;
 $desktop-column-width: 100% / $desktop-column-count;
 
-// $mobile-max-width: 500px;
-// $tablet-max-width: 1000px;
-// $desktop-max-width: 1500px;
+$mobile-max-width: 500px;
+$tablet-max-width: 1000px;
+$desktop-max-width: 1500px;
 
-$mobile-max-width: 320px;
-$tablet-max-width: 768px;
-$desktop-max-width: 1150px;
+// $mobile-max-width: 320px;
+// $tablet-max-width: 768px;
+// $desktop-max-width: 1150px;
 
 $text-color: #444444;
 $title-color: #010000;
